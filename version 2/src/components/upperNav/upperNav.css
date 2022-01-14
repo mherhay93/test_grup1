@@ -1,0 +1,24 @@
+.upper-nav {
+  background: var(--darkOrange);
+  background: linear-gradient(90deg, rgba(253, 93, 14, 255) 0%, rgba(244, 170, 47, 255) 100%);
+  color: var(--white);
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-info1 {
+  border-right: 1px solid var(--white);
+  padding-right: 9px;
+}
+
+.nav-info2 {
+  padding-left: 19px;
+}
+
+.nav-icon {
+ margin-right: 10px;
+ font-size: 18px;
+}

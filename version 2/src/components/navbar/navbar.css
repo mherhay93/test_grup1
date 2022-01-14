@@ -1,0 +1,37 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--gray);
+  padding: 20px 50px;
+  cursor: pointer;
+}
+
+.nav-links li {
+  padding: 20px 40px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links li a {
+  color: var(--black);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: var(--letterSpacing);
+}
+
+.nav-links .active {
+  color: var(--darkOrange);
+}
+
+.nav-social i {
+  font-size: 25px;
+  padding: 10px;
+}
+.nav-logo{
+  color: var(--black)
+}
