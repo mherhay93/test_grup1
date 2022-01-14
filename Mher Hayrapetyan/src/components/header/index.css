@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Black.ttf");
+}
+
+.header {
+  margin: -100px -10px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  padding-top: 111px;
+  z-index: 1;
+  width: 100%;
+  font-family: "Roboto";
+}
+
+.header_img {
+  margin-left: 176px;
+}
+
+.header-nav {
+  padding-left: 167px;
+}
+
+.header-icons {
+  padding-left: 57px;
+}
+
+.header-icons > li:hover {
+  background-color: #ffbe30;
+}
+
+.header-nav,
+.header-icons {
+  display: flex;
+  list-style: none;
+  font-weight: 700;
+  color: white;
+}
+
+.header-nav-li,
+.header-icons > li {
+  margin-left: 30px;
+}
+
+.fa-search {
+  margin-left: 10px;
+}
+
+.fa-user,
+.fa-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+  border: solid #ffbe30;
+}
+
+.fa-user > i {
+  content: url("../assets/images/user-solid.svg");
+  width: 15px;
+  height: 15px;
+}
+
+.fa-search > i {
+  content: url("../assets/images/search-solid.svg");
+  width: 15px;
+  height: 15px;
+}
+
+.header-slideShow {
+  height: 1000px;
+  background-image: url("../assets/images/slider-bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: inherit;
+}
+
+.header-slideShow-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-slideShow-info > p:nth-child(1) {
+  font-size: 67px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0px 0px;
+  padding-top: 294px;
+  word-spacing: 2px;
+  font-family: "sans-serif";
+}
+
+.header-slideShow-info > p:nth-child(2) {
+  font-size: 72px;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0px 0px;
+  word-spacing: 2px;
+  font-family: "Roboto";
+}
+
+.header-slideShow-info > p:nth-child(3) {
+  color: #ffffff;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  margin: 14px 0px 55px;
+  word-spacing: 2px;
+}
+
+.header-slideShow-buttons * {
+  height: 51px;
+  padding: 0px 35px;
+  border-radius: 50px;
+  margin-left: 10px;
+  color: white;
+  font-family: "Roboto";
+}
+
+.header-slideShow-buttons :nth-child(1) {
+  background-color: #ff620e;
+  border: solid #ff620e;
+}
+
+.header-slideShow-buttons :nth-child(2) {
+  background: none;
+  border: solid #ffbe30;
+}
