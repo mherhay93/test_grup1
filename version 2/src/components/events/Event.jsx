@@ -1,32 +1,39 @@
-
 import { GoLocation, GoClock } from "react-icons/go";
-import bg from './bg.jpg'
+import { FaRegHeart } from "react-icons/fa";
 
-export default function Event() {
+
+
+export default function Event({id,picture,title,address,registered,date, ticket, isHidden}) {
+ 
   return (
+    !isHidden ?
     <section className='event-box'>
       <div className='img-container'>
-        <img src={bg} alt='img' />
+        <img src={picture} alt='img' />
         <div className="date-info">
-        <p>14 Jan</p>
+          <p>{ date}</p>
       </div>
       </div>
       
       <div className="info-container">
         <div>
-         <h1>Barcelona Food Truck Festival 2018-2019</h1>
-         <h3>Tickets from &#1423;5000</h3>
+          <h1>{ title }</h1>
+          <h3>Tickets: { ticket}</h3>
         </div>
         <div>
          <GoClock className="info-logo"/>
-        <span>Start 20:00pm - 22:00pm</span>
+          <span>Start { registered }</span>
         </div>
         <div className="info">
          <GoLocation className="info-logo" />
-         <span>Manhattan, New York</span>
+          <span>{ address }</span>
       </div >
-         <button className="info-btn">Details</button>
+        <button className="info-btn">Details</button>
+        <div className="like-container">
+          <FaRegHeart className="heart"/>
+        </div>
       </div>
-    </section>
+      </section>
+      :null
   );
 }

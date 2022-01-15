@@ -8,14 +8,14 @@ const Body = () => {
              <h2 >One Stop</h2>
              <h1>Event planner</h1>
           </div>
-           <div className="hero-links">
+           {/* <div className="hero-links">
               <li className="line">
                 <a href="#">Home</a>
               </li>
             <li>
                 <a href="#">Events</a>
             </li>
-           </div>
+           </div> */}
         </div>
       </section>
   )

@@ -1,26 +1,28 @@
 import './navbar.css'
 import logo from '../../img/logo.png'
 import { FaGlobe } from "react-icons/fa";
-import {Link} from 'react-router-dom' 
+import { Link,NavLink} from 'react-router-dom' 
 
 const Navbar = () => {
   return (
     <nav className="main-nav">
         <div>
-          <img src={logo} alt="logo"/>
+           <Link to='/'>
+              <img src={logo} alt="logo"/>
+           </Link>
         </div>
         <div className="nav-links">
         <li>
-           <Link to='/'>Home</Link>
+           <NavLink to='/'>Home</NavLink>
            </li>
         <li>
-           <Link to='/about'>About</Link>
+           <NavLink to='/about'>About</NavLink>
            </li>
         <li>
-           <Link to='/events'>Events</Link>
+           <NavLink to='/events'>Events</NavLink>
            </li>
         <li>
-           <Link to='/contacts'>Contacts</Link>
+           <NavLink to='/contacts'>Contacts</NavLink>
            </li>
         </div>
         <div className="nav-social">

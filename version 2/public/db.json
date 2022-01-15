@@ -1,0 +1,143 @@
+[
+  {
+    "_id": "61e193c49a0b36b699158897",
+    "index": 0,
+    "isActive": false,
+    "picture": "img/mezzo.jpg",
+    "title": "G-Flex Band at Mezzo",
+    "field": "music",
+    "ticket" : "from ֏5000",
+    "date": "24 Jan",
+   "registered": "20:00 - 23:30",
+    "address": "57 Mashtots Avenue, Yerevan, 1349",
+    "email": "camachowalls@gynk.com",
+    "phone": "+1 (861) 536-3174",
+   
+    "info": "Velit ullamco incididunt voluptate sit ad aute cillum. Duis enim consectetur dolor minim occaecat non incididunt irure tempor eu do deserunt ipsum veniam. Mollit nostrud do ullamco non excepteur tempor pariatur magna elit ut duis pariatur consequat.\r\n"
+   
+  },
+  {
+    "_id": "61e193c4fa2f599fedfcef44",
+    "index": 1,
+    "isActive": false,
+    "picture": "img/waterfall.jpg",
+     "title": "Ice waterfall",
+    "field": "tourism",
+    "ticket" : "free",
+    "date": "15 Feb",
+   "registered": "11:00 - 19:30",
+    "address": "Marz Shirak",
+    "email": "camachowalls@zytrek.com",
+    "phone": "+1 (921) 579-2135",
+    "info": "Aliquip amet adipisicing consequat et Lorem. Irure mollit do labore in. Irure aliqua esse aliquip pariatur.\r\n"
+  },
+    {
+    "_id": "61e193c49593476eaead04b9",
+    "index": 2,
+    "isActive": false,
+    "picture": "img/nutcracker.jpg",
+     "title": "P.Tchaikovsky The Nutcracker",
+    "field": "music",
+    "ticket" : "from ֏3500",
+    "date": "03 Feb",
+   "registered": "19:00 - 21:30",
+    "email": "camachowalls@optyk.com",
+    "phone": "+1 (998) 538-3323",
+    "address": "Opera and Ballet Theatre of Armenia ",
+    "info": "Nisi laboris amet elit laborum pariatur proident ad officia cillum sit anim pariatur. Sit fugiat magna ad non dolore nisi. Commodo velit aliqua culpa anim esse tempor amet mollit.\r\n"
+  },
+  {
+    "_id": "61e193c4ef660d2b86cf74f7",
+    "index": 3,
+    "isActive": false,
+    "picture": "img/carmen.jpg",
+     "title": "G.BIZET CARMEN opera",
+    "field": "music",
+    "ticket" : "from ֏7000",
+    "date": "18 Feb",
+   "registered": "19:00 - 22:00",
+    "email": "camachowalls@noralex.com",
+    "phone": "+1 (951) 569-3974",
+    "address": "Opera and Ballet Theatre of Armenia ",
+    "info": "Incididunt ut tempor pariatur elit minim anim ipsum enim officia magna cillum eiusmod cupidatat ut. Do qui voluptate quis esse officia magna cupidatat nisi est reprehenderit excepteur. Sint aliqua magna ipsum culpa cupidatat eiusmod laboris exercitation laborum do et.\r\n"
+   
+  },
+  
+    {
+    "_id": "61e193c4f8e3efa9f046e33f",
+    "index": 4,
+    "isActive": false,
+    "picture": "img/threePigs.jpg",
+    "title": "Three pigs",
+    "field": "culture",
+    "ticket" : "from ֏2500",
+    "date": "10 Feb",
+   "registered": "15:00 - 17:30",
+    "address": "Hovhannes Tumanyan Puppet Theatre of Yerevan",
+    "email": "camachowalls@netropic.com",
+    "phone": "+1 (944) 438-3783",
+   
+    "info": "Elit voluptate anim eu et velit. Aliqua velit ad dolore voluptate laborum eiusmod sint exercitation ipsum et. Tempor ea nisi ea exercitation adipisicing. Exercitation aliqua reprehenderit do commodo sit in mollit excepteur quis. Irure ex proident excepteur quis consectetur voluptate fugiat commodo eu.\r\n"
+  },
+
+  {
+    "_id": "61e193c470797e8645f5bcc6",
+    "index": 5,
+    "isActive": false,
+    "picture": "img/ornifl.jpg",
+     "title": "Ornifl",
+    "field": "culture",
+    "ticket" : "from ֏2500",
+    "date": "09 Feb",
+   "registered": "19:00 - 21:30",
+    "email": "camachowalls@rodeomad.com",
+    "phone": "+1 (808) 527-2894",
+    "address": "Yerevan Dramatic Theatre",
+    "info": "Ipsum cillum esse veniam sit amet adipisicing enim dolor cillum et deserunt in eiusmod. Sint consequat aliquip aliqua sint veniam aute ut. Veniam deserunt nostrud pariatur magna id ad ex duis do. Labore sunt ipsum excepteur magna labore tempor.\r\n"
+  },
+  {
+    "_id": "61e193c47d332908ddb1396f",
+    "index": 6,
+    "isActive": "false",
+    "picture": "img/spiderMan.jpg",
+     "title": "Spider-Man",
+    "field": "movie",
+    "ticket" : "from ֏5000",
+    "date": "16 Feb",
+   "registered": "16:00 - 19:30",
+    "address": "Moscow cinema",
+    "email": "camachowalls@ozean.com",
+    "phone": "+1 (987) 522-2649",
+    "info": "Aliquip eiusmod ea duis in commodo non ullamco commodo magna veniam consectetur voluptate. Sint aliquip ut nisi ad incididunt dolor nisi id voluptate excepteur officia aute. Irure amet aliquip excepteur quis ut dolore velit nostrud in fugiat sint. Proident pariatur consequat ex excepteur consectetur consequat veniam. Cupidatat tempor quis est aliquip amet magna exercitation dolor nulla minim mollit velit.\r\n"
+  },
+  {
+    "_id": "61e193c4ef660d2b86cf74f7",
+    "index": 7,
+    "isActive": false,
+    "picture": "img/sos.jpg",
+     "title": "The fluff",
+    "field": "culture",
+    "ticket" : "from ֏4500",
+    "date": "21 Feb",
+   "registered": "19:00 - 22:00",
+    "email": "camachowalls@noralex.com",
+    "phone": "+1 (951) 569-3974",
+    "address": " Sos Theatre Armenia",
+    "info": "Incididunt ut tempor pariatur elit minim anim ipsum enim officia magna cillum eiusmod cupidatat ut. Do qui voluptate quis esse officia magna cupidatat nisi est reprehenderit excepteur. Sint aliqua magna ipsum culpa cupidatat eiusmod laboris exercitation laborum do et.\r\n"
+  },
+{
+    "_id": "61e193c4fda65dad177a5dcb",
+    "index": 8,
+    "isActive": false,
+    "picture": "img/digital.jpg",
+     "title": "Digital Demo Day",
+    "field": "education",
+    "ticket" : "free",
+    "date": "23 Feb",
+   "registered": "15:00 - 17:30",
+    "address": "Armenia Startup Academy ",
+    "email": "camachowalls@mantrix.com",
+    "phone": "+1 (887) 440-3379",
+    "info": "Consequat minim quis adipisicing id dolore quis laborum. Quis id laborum voluptate sit non. Commodo velit irure qui enim enim cillum ut labore sit esse non eiusmod. Lorem dolore labore tempor et nulla esse anim reprehenderit et incididunt reprehenderit consequat esse.\r\n"
+  }
+]
