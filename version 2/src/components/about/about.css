@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     letter-spacing: .6px;
-    background-attachment: fixed;
+
 
 }
 .image_section_op{
@@ -27,8 +27,8 @@
 .small_title{
     color: #ffffff;
     margin-bottom: 15px;
-    letter-spacing: 8px;
-    font-size: 18px;
+    letter-spacing: 0.35vw;
+    font-size: 1vw;
     text-transform: uppercase;
 }
 
@@ -39,7 +39,7 @@
 
 .big_title{
     margin: 0px;
-    font-size: 42px;
+    font-size: 2.2vw;
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 500;
@@ -54,6 +54,7 @@
     padding: 0px;
     margin: 0 auto;
     display: table;
+    font-size: 1vw
 }
 
 .list_home{
@@ -132,14 +133,14 @@
     margin-bottom: 15px;
     letter-spacing: 5px;
     color: #878787;
-    font-size: 18px;
+    font-size: 1vw;
     text-transform: uppercase;
 }
 
 .section_big_title{
     margin: 0px;
     padding: 0px;
-    font-size: 48px;
+    font-size: 3vw;
     font-weight: 400;
     color: #333333;
 }
@@ -160,7 +161,7 @@
     width: 44%;
     border: none;
     margin: 10px;
-    font-weight: 600;
+    font-weight: 800;
     padding: 15px 35px;
     text-align: center;
     border-radius: 50px;
@@ -169,6 +170,7 @@
     background: rgb(255,66,2);
     background: linear-gradient(349deg, rgba(255,66,2,1) 0%, rgba(255,182,45,1) 100%);
     color: #ffffff !important;
+    font-size: 0.6vw
     
 }
 
@@ -190,7 +192,7 @@
     font-weight: 900;
     position: relative;
     padding-right: 60px;
-    font-size: 24px;
+    font-size: 1.25vw;
 }
 
 .item_title_text::after{
@@ -207,6 +209,8 @@
     margin-bottom: 20px;
     color: #7B7B7B;
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.85vw;
+
 }
 
 .management_item_title2{
@@ -214,6 +218,8 @@
     font-family: 'Open Sans', sans-serif;
     font-style: italic;
     font-weight: 900;
+    font-size: 0.85vw;
+
 }
 
 .awards_section{
@@ -234,7 +240,15 @@
     width: 63%;
     height: 75%;
     display: flex;
-    justify-content: space-between;
+}
+
+.awards_section_image{
+    width: 50%;
+}
+
+.awards_section_image img{
+    width: 95%;
+    height: 91%;
 }
 
 .winning_awards{
@@ -248,16 +262,16 @@
 
 .awards_small_title{
     margin-bottom: 15px;
-    letter-spacing: 5px;
+    letter-spacing: 0.2vw;
     color: #878787;
-    font-size: 18px;
+    font-size: 1vw;
     text-transform: uppercase;
 }
 
 .awards_big_title{
     margin: 0px;
     padding: 0px;
-    font-size: 48px;
+    font-size: 2.7vw;
     font-weight: 400;
     color: #333333;
 }
@@ -320,7 +334,7 @@
 .award_title{
     font-weight: 700;
     position: relative;
-    font-size: 24px;
+    font-size: 1.3vw;
 }
 
 .award_date{
@@ -330,7 +344,7 @@
     position: absolute;
     padding-bottom: 10px;
     color: #ffbe30;
-    font-size: 16px;
+    font-size: 0.9vw;
     text-transform: uppercase;
 }
 
@@ -358,7 +372,7 @@
 }
 
 .m-0{
-    font-size: 14px;
+    font-size: 0.8vw;
     width: 84%;
     margin-top: 5px;
 }

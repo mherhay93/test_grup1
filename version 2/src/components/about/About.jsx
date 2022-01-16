@@ -11,7 +11,7 @@ const About = () => {
   const navigate = useNavigate()
 
    const goBack = () => {
-       navigate('/')
+    navigate('/')
    }
 
   const {award} = useAwardData()
