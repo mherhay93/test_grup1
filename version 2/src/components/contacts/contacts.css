@@ -1,6 +1,20 @@
 .form-contactUs {
-    margin: 70px 0px 100px 210px;
-  }
+  padding: 10% 15%;
+}
+
+.form-contactUs::before {
+background-image: url("../../img/form-background.png");
+background-repeat: no-repeat;
+content: "";
+position: absolute;
+background-size: 100%;
+filter: brightness(51%);
+top: 161px;
+left: 0;
+width: 100%;
+height: 1110px;
+z-index: -1;
+}
   
   .form-title {
     display: flex;
