@@ -3,6 +3,8 @@ import { useAwardData } from "../../context/aboutContext"
 import img_age from "../../img/img_age.png"
 import "./about.css"
 import { useNavigate } from "react-router-dom"
+import {FaChevronCircleUp, FaChevronCircleDown} from "react-icons/fa";
+
 
 const About = () => {
 
@@ -100,10 +102,10 @@ const About = () => {
           </div>
           <div className="award_item_area">
             <span className="arrow_up">
-              <i class="fas fa-chevron-circle-up"></i>
+              <FaChevronCircleUp />
             </span>
             <span className="arrow_down">
-              <i class="fas fa-chevron-circle-down"></i>
+              <FaChevronCircleDown />
             </span>
             <div className="award_wrapper">
               {
