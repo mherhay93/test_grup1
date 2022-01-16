@@ -65,11 +65,21 @@
 }
 
 .header-slideShow-buttons :nth-child(1) {
-  background:linear-gradient( 90deg, rgba(253, 93, 14, 255) 0%, rgba(244, 170, 47, 255) 100% );
+  background: linear-gradient(349deg, rgba(255,66,2,1) 0%, rgba(255,182,45,1) 100%);
+  border: none;
+}
+
+.header-slideShow-buttons :nth-child(1):hover {
+  background: linear-gradient(342deg, rgba(255,182,45,1) 0%, rgba(255,66,2,1) 100%);
   border: none;
 }
 
 .header-slideShow-buttons :nth-child(2) {
   background: none;
   border: solid #ffbe30;
+}
+
+.header-slideShow-buttons :nth-child(2):hover {
+  background: #ffbe30;
+
 }
