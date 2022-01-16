@@ -3,52 +3,52 @@
 }
 
 .form-contactUs::before {
-background-image: url("../../img/form-background.png");
-background-repeat: no-repeat;
-content: "";
-position: absolute;
-background-size: 100%;
-filter: brightness(51%);
-top: 161px;
-left: 0;
-width: 100%;
-height: 1110px;
-z-index: -1;
+    background-image: url("../../img/form-background.png");
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    background-size: 100%;
+    filter: brightness(51%);
+    top: 161px;
+    left: 0;
+    width: 100%;
+    height: 1070px;
+    z-index: -1;
 }
   
-  .form-title {
+.form-title {
     display: flex;
     flex-direction: column;
-  }
-  
-  .form-title > p {
-    margin-bottom: 15px;
+}
+
+.form-title > p {
     letter-spacing: 5px;
-    color: #878787;
-    font-size: 18px;
+    color: white;
+    font-size: 1.4vw;
     font-family: sans-serif;
-  }
-  
-  .form-messige {
+}
+
+.form-message {
     display: flex;
-    font-size: 48px;
+    font-size: 4.1vw;
     font-weight: 400;
-    margin-top: 0px;
-    color: #333333;
+    color: white;
     font-family: sans-serif;
-  }
+    margin: 15px 0;
+}
   
-  .form-messige * {
-    margin: 0px 0px;
-  }
-  
-  .form-messige p:nth-child(2) {
-    padding-left: 10px;
+.form-message * {
+    margin: 0 0;
+}
+
+.form-message p:nth-child(2) {
+    margin-left: 10px;
     font-weight: bold;
-  }
-  
-  .container-inputs > input {
+}
+
+.container-inputs > input {
     height: 50px;
+<<<<<<< HEAD
     padding: 0px 25px;
     background-color: #f7f7f7;
     border: 1px solid #f0f0f0;
@@ -59,30 +59,39 @@ z-index: -1;
   }
   
   .container-inputs {
-    display: grid;
-    grid-template-columns: 570px 570px;
-    grid-template-rows: auto;
-    column-gap: 35px;
-    row-gap: 30px;
-  }
-  
-  .yousMessage {
+=======
+    color: black;
+    padding: 0 25px;
+    background-color: #ffffffd1;
+    border: 1px solid black;
+}
+
+.yousMessage {
     grid-column: 1 / span 2;
     height: 150px;
-    background-color: #f7f7f7;
-    border: 1px solid #f0f0f0;
-  }
-  
-  .formButton {
+    border: 1px solid black;
+    width: 100%;
+    background-color: #ffffffd1;
+    padding: 3%;
+}
+
+.container-inputs {
+>>>>>>> Hakob
+    display: grid;
+    column-gap: 35px;
+    row-gap: 30px;
+}
+
+.formButton {
+    padding: 15px;
     grid-column: 1 / span 2;
-    margin: 0px 409px;
-    height: 50px;
     border-radius: 50px;
-    border: none;
     color: white;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 16px;
-    background: linear-gradient(to bottom right, #ff3e00, #ffbe30) !important;
-  }
+    margin-right: auto;
+    font-size: 1.5vw;
+    background: linear-gradient(to bottom right, #ff3e00de, #ffbe30db) !important;
+    margin-left: auto;
+}
   

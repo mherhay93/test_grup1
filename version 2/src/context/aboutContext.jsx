@@ -35,8 +35,8 @@ const AwardProvider = ({children}) => {
  const [award, setAward] = useState([]);
 
  useEffect(() => {
-  axios.get("/dbawards.json")
-  .then(res => setAward(res.data.awards)) 
+  axios.get("/awards.json")
+  .then(res => setAward(res.data.award))
  }, [])
 
  return (<AwardContext.Provider value={{award}}>
