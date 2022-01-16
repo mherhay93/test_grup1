@@ -1,0 +1,83 @@
+.register-container {
+    position: fixed;
+    background: linear-gradient( 90deg, rgba(253, 93, 14, 255) 0%, rgba(244, 170, 47, 255) 100%);
+    border-radius: 20px;
+    width: 470px;
+    height: 650px;
+    left: 580px;
+    bottom: 15px;
+
+}
+.my-style {
+     display: flex;
+}
+
+.close {
+    margin-top: 8px;
+    margin-left: 93%;
+    width: 25px;
+    height: 25px;
+    color: white;
+    cursor: pointer;
+  }
+
+.register-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.register-title>div {
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.register-title > p:nth-child(1) {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.register-title > div > p:nth-child(1){
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.register-title > div > p:nth-child(2){
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
+.register-form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-form > * {
+    height: 50px;
+    width: 410px;
+    border-radius: 50px;
+    border: none;
+    margin-top: 25px;
+    padding: 0px 25px;
+    background-color: #f7f7f7;;
+}
+
+.register-form > button {
+    color: #F97F1D;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+}

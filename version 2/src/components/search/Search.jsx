@@ -48,7 +48,6 @@ const Search = () => {
             <option value="movie">Movie</option>
             <option value="tourism">Tourism</option>
           </select>
-          <button type="submit">Search</button>
           </form>
         </div>
       </section>

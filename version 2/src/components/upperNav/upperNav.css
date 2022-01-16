@@ -6,16 +6,21 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  cursor: pointer;
+
+}
+
+.border-right {
+  border-right: 1px solid var(--white); 
 }
 
 .nav-info1 {
-  border-right: 1px solid var(--white);
-  padding-right: 9px;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .nav-info2 {
-  padding-left: 19px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .nav-icon {

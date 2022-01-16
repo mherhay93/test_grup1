@@ -4,11 +4,11 @@
   justify-content: space-between;
   color: var(--gray);
   padding: 20px 50px;
-  cursor: pointer;
 }
 
 .nav-links li {
-  padding: 20px 40px;
+  margin: 20px 40px;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -33,5 +33,6 @@
   padding: 10px;
 }
 .nav-logo{
-  color: var(--black)
+  color: var(--black);
+  cursor: pointer;
 }
