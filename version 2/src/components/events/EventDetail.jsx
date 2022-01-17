@@ -6,14 +6,14 @@ import './events.css'
 const EventDetail = () => {
   const {events} = useGlobalContext()
   const { id } = useParams()
-   console.log(events)
+
   return (
     <div className="details-container">
       {
         events && events.filter(item => item._id === id).map(item => {
-          const  {picture, date,title,ticket,registered,info, address } = item
+          const  {picture, date,title,ticket,registered,info, address, _id } = item
           return (
-            <section >
+            <section key={_id}>
               <div>
                 <h1>{ title } </h1>
                 <p>{info}</p>
