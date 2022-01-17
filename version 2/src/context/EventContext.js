@@ -10,7 +10,7 @@ const AppProvider = ({ children }) => {
   const fetchData = async () => {
     setIsLoading(true)
     try {
-     const response = await fetch('/db.json')
+     const response = await fetch(' http://localhost:8000/events')
       const data = await response.json()
       setEvents(data)
       setIsLoading(false)
@@ -35,11 +35,11 @@ const AppProvider = ({ children }) => {
       if (val === 'all') {
        fetchData()
      }
-         item.isHidden = !item.field.includes(val)
-        return item
+       item.isHidden = !item.field.includes(val)
+           return item
       }))
- 
   }
+  
   return (
     <EventContext.Provider
       value={{

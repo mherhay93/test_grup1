@@ -1,9 +1,9 @@
 import { GoLocation, GoClock } from "react-icons/go";
 import { FaRegHeart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 
-
-export default function Event({id,picture,title,address,registered,date, ticket, isHidden}) {
+export default function Event({_id,picture,title,address,registered,date, ticket, isHidden}) {
  
   return (
     !isHidden ?
@@ -27,8 +27,10 @@ export default function Event({id,picture,title,address,registered,date, ticket,
         <div className="info">
          <GoLocation className="info-logo" />
           <span>{ address }</span>
-      </div >
-        <button className="info-btn">Details</button>
+          </div >
+          <Link to={`/events/${_id}`}>
+            <button className="info-btn">Details</button>
+          </Link>
         <div className="like-container">
           <FaRegHeart className="heart"/>
         </div>
