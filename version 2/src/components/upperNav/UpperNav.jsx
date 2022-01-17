@@ -1,38 +1,12 @@
+import { AiFillMail, AiFillPhone } from "react-icons/ai";
+import { Link } from "react-router-dom";
+
 import "./upperNav.css";
 
-import { useState } from "react";
-import { AiFillMail, AiFillPhone } from "react-icons/ai";
-import Register from "../register/register";
-import Login from "../login/iogin";
-
-let disabl;
-
 const UpperNav = () => {
-  const [openRegister, setOpenRegister] = useState(false);
-  const [openLogin, setOpenLogin] = useState(false);
-  const [disabled, setDisabled] = useState(openRegister);
-
-  const openRegisterClick = () => {
-    setOpenRegister(!openRegister);
-    setDisabled(!disabled);
-  };
-
-  const openClickLogin = () => {
-    setOpenLogin(!openLogin);
-    setDisabled(!disabled);
-  };
-
-disabl = disabled
-
   return (
     <div className="upper-nav">
-      {openRegister && <Register />}
-      {openLogin && <Login />}
-      <div
-        style={{
-          pointerEvents: disabled ? "none" : "initial",
-        }}
-      >
+      <div>
         <span className="nav-info1">
           <AiFillMail className="nav-icon" />
           info@harmony.com
@@ -42,22 +16,15 @@ disabl = disabled
           100-2222-9999
         </span>
       </div>
-      <div
-        style={{
-          pointerEvents: disabled ? "none" : "initial",
-        }}
-      >
-        <span className="nav-register nav-info1" onClick={openRegisterClick}>
-          Register
-        </span>
+      <div>
+        <Link to="/register">
+          <span className="nav-register nav-info1">Register</span>
+        </Link>
         <span className="border-right"></span>
-        <span className="nav-info2" onClick={openClickLogin}>
-          Login
-        </span>
+      <Link to = '/login'>  <span className="nav-info2">Login</span></Link>
       </div>
     </div>
   );
 };
 
 export default UpperNav;
-export {disabl};

@@ -1,25 +1,14 @@
 .register-container {
-    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-image: url(../../img/galact.jpg);
+}
+
+.register-box {
     background: linear-gradient( 90deg, rgba(253, 93, 14, 255) 0%, rgba(244, 170, 47, 255) 100%);
-    border-radius: 20px;
-    width: 470px;
+    width: 800px;
     height: 650px;
-    left: 580px;
-    bottom: 15px;
-
 }
-.my-style {
-     display: flex;
-}
-
-.close {
-    margin-top: 8px;
-    margin-left: 93%;
-    width: 25px;
-    height: 25px;
-    color: white;
-    cursor: pointer;
-  }
 
 .register-title {
     display: flex;
@@ -64,7 +53,7 @@
     justify-content: center;
 }
 
-.register-form > * {
+.register-form > input {
     height: 50px;
     width: 410px;
     border-radius: 50px;
@@ -73,6 +62,19 @@
     padding: 0px 25px;
     background-color: #f7f7f7;;
 }
+
+.checkBoxInput {
+    margin-top: 20px;
+}
+
+.checkBoxInput > * {
+    height: 20px;
+    width: 20px;
+    margin-left: 30px;
+    color: white;
+}
+
+
 
 .register-form > button {
     color: #F97F1D;

@@ -3,15 +3,11 @@ import logo from "../../img/logo.png";
 import { FaGlobe } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
-import { disabl } from "../upperNav/UpperNav";
+
 
 const Navbar = () => {
-  console.log(disabl);
   return (
-    
-    <nav className="main-nav" style={{
-      pointerEvents: disabl ? "none" : "initial",
-    }}>
+    <nav className="main-nav">
       <div>
         <Link to="/">
           <img src={logo} alt="logo" />
