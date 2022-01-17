@@ -1,37 +1,34 @@
-import './admin.css'
-import { Link } from 'react-router-dom'
+import "./admin.css";
+import { Link } from "react-router-dom";
 
 const Admin = () => {
   return (
     <div>
-      <form class="form-contactUs" action="" method="">
-    <div class="form-title">
-      <p>Add new event</p>
-      
-    </div>
-    <div class="container-inputs">
-      <input class="yourName" placeholder="Event title" />
-      <input class="emailAddress" placeholder="Image" />
-       <input class="phoneNumber" placeholder="Date: eg. 21 Feb" />
-       <input class="phoneNumber" placeholder="Time: eg. 16:00 - 19:30" />
-       {/* <select >
-         <option value="music">Music</option>
-          <option value="education">Education</option>
-          <option value="culture">Culture</option>
-          <option value="movie">Movie</option>
-          <option value="tourism">Tourism</option>
-       </select> */}
-          <textarea class="yousMessage" placeholder="Description"></textarea>
-          <Link to='/events'>
-            <button class="formButton" type="submit">ADD Event</button>
+      <form className="form-admin" action="" method="">
+        <div className="form-admin-title">
+          <p>Add new event</p>
+        </div>
+        <div className="admin-container-inputs">
+          <input className="eventTitle" placeholder="Event title" />
+          <input className="eventImage" placeholder="Image" />
+          <input className="eventDate" placeholder="Date: eg. 21 Feb" />
+          <input className="eventDate" placeholder="Time: eg. 16:00 - 19:30" />
+          <select>
+            <option value="music">Music</option>
+            <option value="education">Education</option>
+            <option value="culture">Culture</option>
+            <option value="movie">Movie</option>
+            <option value="tourism">Tourism</option>
+          </select>
+          <Link to="/events">
+            <button className="formButtonAdmin" type="submit">
+              ADD Event
+            </button>
           </Link>
-    
+        </div>
+      </form>
     </div>
-  </form>
-    </div>
-  )
-}
+  );
+};
 
-export default Admin
-
-
+export default Admin;

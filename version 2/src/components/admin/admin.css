@@ -1,13 +1,27 @@
-.form-contactUs {
-  margin: 70px 0px 100px 210px;
+.form-admin {
+  padding: 10% 15%;
 }
 
-.form-title {
+.form-admin::before {
+  background-image: url("../../img/form-background.png");
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  background-size: 100%;
+  filter: brightness(51%);
+  top: 161px;
+  left: 0;
+  width: 100%;
+  height: 1070px;
+  z-index: -1;
+}
+
+.form-admin-title {
   display: flex;
   flex-direction: column;
 }
 
-.form-title>p {
+.form-admin-title > p {
   margin-bottom: 15px;
   letter-spacing: 5px;
   color: #878787;
@@ -15,38 +29,18 @@
   font-family: sans-serif;
 }
 
-.form-messige {
-  display: flex;
-  font-size: 48px;
-  font-weight: 400;
-  margin-top: 0px;
-  color: #333333;
-  font-family: sans-serif;
-}
 select {
-   color: #333333;
-}
-.form-messige * {
-  margin: 0px 0px;
+  color: #333333;
 }
 
-.form-messige p:nth-child(2) {
-  padding-left: 10px;
-  font-weight: bold;
-}
-
-.container-inputs>input {
+.admin-container-inputs > input {
   height: 50px;
   padding: 0px 25px;
   background-color: #f7f7f7;
   border: 1px solid #f0f0f0;
 }
 
-.yousMessage {
-  width: 1170px;
-}
-
-.container-inputs {
+.admin-container-inputs {
   display: grid;
   grid-template-columns: 570px 570px;
   grid-template-rows: auto;
@@ -54,14 +48,7 @@ select {
   row-gap: 30px;
 }
 
-.yousMessage {
-  grid-column: 1 / span 2;
-  height: 150px;
-  background-color: #f7f7f7;
-  border: 1px solid #f0f0f0;
-}
-
-.formButton {
+.formButtonAdmin {
   grid-column: 1 / span 2;
   margin: 0px 409px;
   height: 50px;
