@@ -1,6 +1,7 @@
 import "./navbar.css";
 import logo from "../../img/logo.png";
 import { FaGlobe } from "react-icons/fa";
+import { RiAdminFill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -26,6 +27,9 @@ const Navbar = () => {
         </li>
       </div>
       <div className="nav-social">
+        <NavLink to="/admin">
+          <RiAdminFill className="nav-logo" />
+        </NavLink>
         <FaGlobe className="nav-logo" />
       </div>
     </nav>

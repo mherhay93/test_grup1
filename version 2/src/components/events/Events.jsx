@@ -5,6 +5,7 @@ import './events.css';
 import { useGlobalContext } from "../../context/EventContext";
 import Loading from "../Loading";
 
+
 const Events = () => {
    const { events, isLoading } = useGlobalContext()
   if (isLoading) {
@@ -16,7 +17,7 @@ const Events = () => {
       <Search />
       <section className="event-container">
         {
-          events && events.map(item => <Event key={item.id} {...item} />)
+        events && events.map(item =>  <Event key={item._id} {...item} />  )
         }
       
       </section>

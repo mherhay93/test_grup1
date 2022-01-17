@@ -101,6 +101,31 @@ button:active {
   cursor: pointer;
 }
 
+.details-container section{
+  width: 45%;
+  padding: 20px;
+  margin: 2% auto;
+ box-shadow: -1px 3px 11px 1px rgba(0, 0, 0, 0.67);
+}
+.details-container h1{
+  color: var(--darkOrange);
+  text-align: center;
+  padding: 10px;
+}
+.details-container p, address{
+  color: var(--darkGray);
+  padding: 10px;
+}
+.details-container button{
+    margin: 3% 35%;
+     border-radius: 50px;
+     border: none;
+     color: white;
+     font-family: sans-serif;
+     font-weight: bold;
+     font-size: 16px;
+     background: linear-gradient(to bottom right, #ff3e00, #ffbe30) !important;
+}
 /* .heart{
  color: red;
 } */

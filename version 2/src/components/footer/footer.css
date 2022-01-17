@@ -5,11 +5,11 @@
   display: flex;
   /* align-items: center; */
   justify-content: space-evenly;
-  padding: 10px;
+  padding: 12px 10px 10px;
 }
 
 .footer-social-links {
-  margin-top: 8%;
+  margin-top: 2%;
 }
 
 .social-icon {

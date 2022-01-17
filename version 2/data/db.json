@@ -1,0 +1,149 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "JohnDoe",
+      "password": "John1234",
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "backgroundImg": "https://res.cloudinary.com/dslaqvh3p/image/upload/socialCover/qdb7i2bujwwcmd0ax9mw.jpg",
+      "picture": "https://res.cloudinary.com/dslaqvh3p/image/upload/socialCover/uaurcczgq9vkpxosnejd.jpg"
+    }
+  ],
+  "events":  [
+     {
+    "_id": "0",
+    "isActive": false,
+    "picture": "img/nutcracker.jpg",
+     "title": "P.Tchaikovsky The Nutcracker",
+    "field": "music",
+    "ticket" : "from ֏3500",
+    "date": "25 Jan",
+   "registered": "19:00 - 21:30",
+    "email": "camachowalls@optyk.com",
+    "phone": "+1 (998) 538-3323",
+    "address": "Opera and Ballet Theatre of Armenia ",
+    "info": "P.Tchaikovsky The Nutcracker: Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”.\r\n"
+  },
+  {
+    "_id": "1",
+    "isActive": false,
+    "picture": "img/mezzo.jpg",
+    "title": "G-Flex Band at Mezzo",
+    "field": "music",
+    "ticket" : "from ֏5000",
+    "date": "26 Jan",
+   "registered": "20:00 - 23:30",
+    "address": "57 Mashtots Avenue, Yerevan, 1349",
+    "email": "camachowalls@gynk.com",
+    "phone": "+1 (861) 536-3174",
+   
+    "info": "G-Flex Band at Mezzo:  Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”. .\r\n"
+   
+  },
+    {
+    "_id": "2",
+    "isActive": false,
+    "picture": "img/digital.jpg",
+     "title": "Digital Demo Day",
+    "field": "education",
+    "ticket" : "free",
+    "date": "01 Feb",
+   "registered": "15:00 - 17:30",
+    "address": "Armenia Startup Academy ",
+    "email": "camachowalls@mantrix.com",
+    "phone": "+1 (887) 440-3379",
+    "info": "Digital Demo Day: Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”. .\r\n"
+  },
+  {
+    "_id": "3",
+    "isActive": false,
+    "picture": "img/waterfall.jpg",
+     "title": "Ice waterfall",
+    "field": "tourism",
+    "ticket" : "free",
+    "date": "05 Feb",
+   "registered": "11:00 - 19:30",
+    "address": "Marz Shirak",
+    "email": "camachowalls@zytrek.com",
+    "phone": "+1 (921) 579-2135",
+    "info": "Ice waterfall: Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”. .\r\n"
+  },
+  {
+    "_id": "4",
+    "isActive": false,
+    "picture": "img/threePigs.jpg",
+    "title": "Three pigs",
+    "field": "culture",
+    "ticket" : "from ֏2500",
+    "date": "10 Feb",
+   "registered": "15:00 - 17:30",
+    "address": "Hovhannes Tumanyan Puppet Theatre of Yerevan",
+    "email": "camachowalls@netropic.com",
+    "phone": "+1 (944) 438-3783",
+   
+    "info": "Three pigs: Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”.\r\n"
+  },
+
+   {
+    "_id": "5",
+    "isActive": false,
+    "picture": "img/carmen.jpg",
+     "title": "G.BIZET CARMEN opera",
+    "field": "music",
+    "ticket" : "from ֏7000",
+    "date": "08 Feb",
+   "registered": "19:00 - 22:00",
+    "email": "camachowalls@noralex.com",
+    "phone": "+1 (951) 569-3974",
+    "address": "Opera and Ballet Theatre of Armenia ",
+    "info": "G.BIZET CARMEN opera: Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”. \r\n"
+   
+  },
+ 
+  {
+    "_id": "6",
+    "isActive": false,
+    "picture": "img/ornifl.jpg",
+     "title": "Ornifl",
+    "field": "culture",
+    "ticket" : "from ֏2500",
+    "date": "19 Feb",
+   "registered": "19:00 - 21:30",
+    "email": "camachowalls@rodeomad.com",
+    "phone": "+1 (808) 527-2894",
+    "address": "Yerevan Dramatic Theatre",
+    "info": "Ornifl: Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”. \r\n"
+  },
+  {
+    "_id": "7",
+    "isActive": "false",
+    "picture": "img/spiderMan.jpg",
+     "title": "Spider-Man",
+    "field": "movie",
+    "ticket" : "from ֏5000",
+    "date": "21 Feb",
+   "registered": "16:00 - 19:30",
+    "address": "Moscow cinema",
+    "email": "camachowalls@ozean.com",
+    "phone": "+1 (987) 522-2649",
+    "info": "Spider-Man: Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”. \r\n"
+  },
+  {
+    "_id": "8",
+    "isActive": false,
+    "picture": "img/sos.jpg",
+     "title": "The fluff",
+    "field": "culture",
+    "ticket" : "from ֏4500",
+    "date": "23 Feb",
+   "registered": "19:00 - 22:00",
+    "email": "camachowalls@noralex.com",
+    "phone": "+1 (951) 569-3974",
+    "address": " Sos Theatre Armenia",
+    "info": "The fluff: Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”.\r\n"
+  }
+ 
+]
+
+}

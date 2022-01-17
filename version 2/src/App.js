@@ -7,8 +7,12 @@ import Events from './components/events/Events';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Contacts from './components/contacts/Contacts';
+import EventDetail from './components/events/EventDetail';
+import Admin from './components/admin/Admin';
 
 import {  BrowserRouter, Routes, Route} from "react-router-dom";
+
+
 
 function App() {
   return (
@@ -19,8 +23,10 @@ function App() {
         <Routes>
             <Route path="/" element={ <Home /> } />
             <Route path="/about" element={  <About /> } />
-            <Route path="/events" element={ <Events /> } />
-            <Route path="/contacts" element={ <Contacts /> } />
+            <Route path="/events" element={<Events />} />
+            <Route path="/events/:id" element={ <EventDetail /> } />
+            <Route path="/contacts" element={<Contacts />} />
+            <Route path="/admin" element={ <Admin /> } />
         </Routes>
         <Footer />
      </main>
