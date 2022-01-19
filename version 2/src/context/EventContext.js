@@ -6,24 +6,42 @@ const EventContext = createContext()
 const AppProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true)
   const [events, setEvents] = useState([])
- 
+ //get events
+   const abortFetch = new AbortController()
   const fetchData = async () => {
     setIsLoading(true)
     try {
-     const response = await fetch(' http://localhost:8000/events')
+     const response = await fetch('http://localhost:8000/events', {signal:abortFetch.signal})
       const data = await response.json()
       setEvents(data)
       setIsLoading(false)
     } catch (error) {
-      console.log(error)
-      setIsLoading(false)
+      if (error.name === "AbortError") {
+        console.log("Fetch aborted")
+      } else {
+        console.log(error)
+        setIsLoading(false)
+      }
+     
     }
   }
   
-    useEffect(() => {
-     fetchData()
+  useEffect(() => {
+      fetchData()
+      return () => abortFetch.abort()
     }, [])
-  
+ 
+    //add events
+  // const addEvents = (val) => {
+  //    fetch(' http://localhost:8000/newEvents', {
+  //   method: "POST",
+  //   body: JSON.stringify(val),
+  //   headers: {'Content-type': 'application/json; charset=UTF-8'},
+  //     })
+  //    
+       
+       
+  // }
   const filterEvents = (val) => {
       setEvents(events.map(item => {
         item.isHidden = !item.title.toLowerCase().includes(val.toLowerCase())
@@ -46,7 +64,8 @@ const AppProvider = ({ children }) => {
         events,
         isLoading,
         filterEvents,
-        sortEvents
+        sortEvents,
+        // addEvents
       }}
     >
       {children}

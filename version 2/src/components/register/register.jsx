@@ -44,7 +44,7 @@ const Register = () => {
                       "Content-type": "application/json;charset=utf-8",
                     },
                   });
-                  break
+                
                 }
               }
             });
