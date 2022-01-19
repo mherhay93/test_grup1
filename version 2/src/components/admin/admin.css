@@ -1,5 +1,7 @@
 .form-admin {
-  padding: 10% 15%;
+  max-width: 400px;
+  padding: 10% ;
+  cursor: pointer;
 }
 
 .form-admin::before {
