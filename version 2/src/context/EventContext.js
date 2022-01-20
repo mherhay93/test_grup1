@@ -10,7 +10,7 @@ const AppProvider = ({ children }) => {
   const fetchData = async () => {
     setIsLoading(true)
     try {
-     const response = await fetch(' http://localhost:8000/events')
+     const response = await fetch('http://localhost:8000/events')
       const data = await response.json()
       setEvents(data)
       setIsLoading(false)

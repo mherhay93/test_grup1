@@ -49,8 +49,10 @@ select {
 }
 
 .formButtonAdmin {
+  width: 40%;
+  padding: 8px 20px;
   grid-column: 1 / span 2;
-  margin: 0px 409px;
+  float: right;
   height: 50px;
   border-radius: 50px;
   border: none;

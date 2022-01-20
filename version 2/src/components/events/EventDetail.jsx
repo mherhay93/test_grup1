@@ -1,11 +1,15 @@
 import { useParams } from "react-router-dom"
 import { useGlobalContext } from './../../context/EventContext';
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
 import './events.css'
 
 const EventDetail = () => {
-  const {events} = useGlobalContext()
-  const { id } = useParams()
+  const {events} = useGlobalContext();
+  const { id } = useParams();
+  const { t } = useTranslation();
+
 
   return (
     <div className="details-container">
@@ -15,13 +19,13 @@ const EventDetail = () => {
           return (
             <section key={_id}>
               <div>
-                <h1>{ title } </h1>
+                <h1>{title } </h1>
                 <p>{info}</p>
-                <p>Date: {date}</p>
-                <p>Time: { registered }</p>
-                <address>Address:{address}</address>
+                <p>{t("Date")} {date}</p>
+                <p>{t("Time")} { registered }</p>
+                <address>{t("Address")}{address}</address>
                <Link to="/events">
-                 <button>Go Back</button>
+                 <button>{t("Go_back")}</button>
               </Link>
              </div>
             </section>

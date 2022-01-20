@@ -43,6 +43,7 @@
     color: #ffffff;
     text-transform: uppercase;
     font-weight: 500;
+    text-align: center;
 
 }
 
@@ -111,7 +112,7 @@
     letter-spacing: .6px;
 
     width: 100%;
-    height: 500px;
+    height: 540px;
     background-color: #F7F7F7;
     display: flex;
     justify-content: center;
@@ -120,13 +121,13 @@
 }
 .management_container{
     width: 70%;
-    height: 70%;
+    height: 82%;
     display: flex;
     justify-content: space-around;
     
 }
 .section_title{
-    width: 30%;
+    width: 37%;
 }
 
 .section_small_title{
@@ -158,7 +159,7 @@
 
 
 .managment_section_button button{
-    width: 44%;
+    width: 40%;
     border: none;
     margin: 10px;
     font-weight: 800;
@@ -199,7 +200,7 @@
     right: 0;
     bottom: 6px;
     height: 5px;
-    width: 50px;
+    width: 2.5vw;
     content: '';
     position: absolute;
     background-color: #ffbe30;
@@ -210,6 +211,7 @@
     color: #7B7B7B;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.85vw;
+    height: auto;
 
 }
 
@@ -310,7 +312,7 @@
     z-index: 2;
     color: #878787;
     font-size: 30px;
-    bottom: -22px;
+    bottom: -24px;
 
 }
 

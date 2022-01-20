@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AppProvider } from './context/EventContext'
-import AwardProvider from './context/aboutContext';
+import  {AwardProvider}  from './context/aboutContext';
 
 ReactDOM.render(
   <React.StrictMode>
