@@ -27,28 +27,22 @@ const Register = () => {
         password: password,
       };
 
-      fetch(" http://localhost:8000/users ")
+      fetch("http://localhost:8000/users")
         .then((response) => {
           return response.json();
         })
         .then((res) => {
+          let counter = 0;
           for (let i in data) {
             res.map((item) => {
               console.log(Object.values(item).includes(nameUser));
               if (nameUser !== "") {
                 if (!Object.values(item).includes(nameUser)) {
-                  fetch("http://localhost:8000/users", {
-                    method: "POST",
-                    body: JSON.stringify(data),
-                    headers: {
-                      "Content-type": "application/json;charset=utf-8",
-                    },
-                  });
-                
+                      counter++
                 }
               }
             });
-          }
+          }console.log(counter);
         });
     },
     [submit]
@@ -121,3 +115,12 @@ const Register = () => {
 };
 
 export default Register;
+
+
+// fetch("http://localhost:8000/users", {
+//   method: "POST",
+//   body: JSON.stringify(data),
+//   headers: {
+//     "Content-type": "application/json;charset=utf-8",
+//   },
+// });
