@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 
 import "../register/register.css";
 
@@ -10,12 +12,68 @@ const Register = () => {
   const [password, setPassword] = useState("");
   const [submit, setSubmit] = useState(false);
 
+  const [errorNameUser, setErrorNameUser] = useState(false);
+  const [errorSurnameUser, seteErrorSurnameUser] = useState(false);
+  const [errorUserNik, setErrorUserNik] = useState(false);
+  const [errorEmailAddress, setErrorEmailAddress] = useState(false);
+  const [errorPassword, setErrorPassword] = useState(false);
+  const [isDisabled, setIsDisabled] = useState(false);
+
+  useEffect(() => {
+    if (nameUser !== "" && errorNameUser !== true) {
+      setErrorNameUser(!errorNameUser);
+    }
+    if (nameUser === "") {
+      setErrorNameUser(false);
+    }
+    if (surnameUser !== "" && errorSurnameUser !== true) {
+      seteErrorSurnameUser(!errorSurnameUser);
+    }
+    if (surnameUser === "") {
+      seteErrorSurnameUser(false);
+    }
+    if (userNik !== "" && errorUserNik !== true) {
+      setErrorUserNik(!errorUserNik);
+    }
+    if (userNik === "") {
+      setErrorUserNik(false);
+    }
+    if (emailAddress !== "" && errorEmailAddress !== true) {
+      setErrorEmailAddress(!errorEmailAddress);
+    }
+    if (emailAddress === "") {
+      setErrorEmailAddress(false);
+    }
+    if (password !== "" && errorPassword !== true) {
+      setErrorPassword(!errorPassword);
+    }
+    if (password === "") {
+      setErrorPassword(false);
+    }
+    if (
+      errorNameUser &&
+      errorSurnameUser &&
+      errorUserNik &&
+      errorEmailAddress &&
+      errorPassword &&
+      !isDisabled
+    ) {
+      setIsDisabled(!isDisabled);
+    } else if (
+      !errorNameUser ||
+      !errorSurnameUser ||
+      !errorUserNik ||
+      !errorEmailAddress ||
+      !errorPassword
+    ) {
+      setIsDisabled(false);
+    }
+  });
+
   const handleSubmit = (event) => {
     event.preventDefault();
     setSubmit(!submit);
   };
-
-  const controler = () => {};
 
   useEffect(
     (data) => {
@@ -35,14 +93,23 @@ const Register = () => {
           let counter = 0;
           for (let i in data) {
             res.map((item) => {
-              console.log(Object.values(item).includes(nameUser));
-              if (nameUser !== "") {
-                if (!Object.values(item).includes(nameUser)) {
-                      counter++
-                }
+              if (Object.values(item).includes(data[i]) && data[i] !== "") {
+                counter++;
               }
             });
-          }console.log(counter);
+          }
+          console.log(counter);
+          if (counter === 0 && nameUser !== "") {
+            fetch("http://localhost:8000/users", {
+              method: "POST",
+              body: JSON.stringify(data),
+              headers: {
+                "Content-type": "application/json;charset=utf-8",
+              },
+            });
+          }
+          counter = 0;
+          console.log(counter);
         });
     },
     [submit]
@@ -88,13 +155,12 @@ const Register = () => {
             }}
           />
           <input
-            type="text"
+            type="password"
             placeholder="Password"
             onChange={(e) => {
               setPassword(e.target.value);
             }}
           />
-          <input type="text" placeholder="Repeat Password" />
           <div className="checkBoxInput">
             <label>
               <input type="checkbox" className="adiminBox" name="admin" />
@@ -105,9 +171,25 @@ const Register = () => {
               User
             </label>
           </div>
-          <button type="submit" onClick={handleSubmit}>
-            LOGIN NOW
-          </button>
+          <Link to="/admin" className="register_login_button_link">
+            <button
+              className="register_login_button"
+              type="submit"
+              onClick={handleSubmit}
+              style={
+                !isDisabled
+                  ? { pointerEvents: "none", opacity: 0.4, color: "black" }
+                  : { pointerEvents: "" }
+              }
+            >
+              LOGIN NOW
+            </button>
+          </Link>
+          {!isDisabled && (
+            <h6 style={{ color: "red" }}>
+              Fill in all the fields in the correct format
+            </h6>
+          )}
         </form>
       </div>
     </div>
@@ -115,12 +197,3 @@ const Register = () => {
 };
 
 export default Register;
-
-
-// fetch("http://localhost:8000/users", {
-//   method: "POST",
-//   body: JSON.stringify(data),
-//   headers: {
-//     "Content-type": "application/json;charset=utf-8",
-//   },
-// });

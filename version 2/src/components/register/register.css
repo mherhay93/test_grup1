@@ -74,9 +74,13 @@
     color: white;
 }
 
+.register_login_button_link {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 
-
-.register-form > button {
+.register_login_button{
     color: #F97F1D;
     font-size: 18px;
     font-weight: bold;

@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 import "./upperNav.css";
 
-const UpperNav = () => {
+const UpperNav = (props) => {
+  console.log(props);
   return (
     <div className="upper-nav">
       <div>
@@ -21,7 +22,9 @@ const UpperNav = () => {
           <span className="nav-register nav-info1">Register</span>
         </Link>
         <span className="border-right"></span>
-      <Link to = '/login'>  <span className="nav-info2">Login</span></Link>
+        <Link to="/login">
+          <span className="nav-info2">Login</span>
+        </Link>
       </div>
     </div>
   );

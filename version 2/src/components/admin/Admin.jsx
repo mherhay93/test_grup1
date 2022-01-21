@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./admin.css";
 import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../context/EventContext";
+import Register from "../register/register";
 
 const Admin = () => {
   const [newEvent, setNewEvent] = useState({
@@ -26,17 +27,18 @@ const Admin = () => {
     });
   };
   const handelSubmit = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     // addEvents(newEvent)
+    console.log(newEvent);
     fetch("http://localhost:8000/events", {
       method: "POST",
       body: JSON.stringify(newEvent),
       headers: { "Content-type": "application/json; charset=UTF-8" },
     })
       .then((res) => {
-        if (!res.ok) {
-          throw Error("could not fetch tha data");
-        }
+        // if (!res.ok) {
+        //   throw Error("could not fetch tha data");
+        // }
         return res.json();
       })
       .then((data) => {
@@ -58,78 +60,88 @@ const Admin = () => {
   };
 
   return (
-    <div>
-      <form className="form-admin" onSubmit={handelSubmit}>
-        <div className="form-admin-title">
-          <p>Add new event</p>
+    <div className="admin-container">
+      <div className="admin-container-prof">
+        <div>
+          <p>Name</p>
+          <p>Surname</p>
+          <p>Nikname</p>
         </div>
-        <div className="admin-container-inputs">
-          <input
-            className="eventTitle"
-            placeholder="Event title"
-            value={newEvent.title}
-            name="title"
-            onChange={changeInputs}
-          />
-          <input
-            className="eventImage"
-            placeholder="Image"
-            value={newEvent.picture}
-            name="picture"
-            onChange={changeInputs}
-          />
-          <input
-            className="eventDate"
-            placeholder="Date: eg. 21 Feb"
-            value={newEvent.date}
-            name="date"
-            onChange={changeInputs}
-          />
-          <input
-            className="eventDate"
-            placeholder="Time: eg. 16:00 - 19:30"
-            value={newEvent.registered}
-            name="registered"
-            onChange={changeInputs}
-          />
-          <input
-            className="eventDate"
-            placeholder="Price: eg. ֏4500"
-            value={newEvent.ticket}
-            name="ticket"
-            onChange={changeInputs}
-          />
-          <input
-            className="eventDate"
-            placeholder="Address"
-            value={newEvent.address}
-            name="address"
-            onChange={changeInputs}
-          />
-          <select value={newEvent.field} name="field" onChange={changeInputs}>
-            <option value="music">Music</option>
-            <option value="education">Education</option>
-            <option value="culture">Culture</option>
-            <option value="movie">Movie</option>
-            <option value="tourism">Tourism</option>
-          </select>
-          <textarea
-            className="yousMessage"
-            placeholder="Description"
-            value={newEvent.info}
-            name="info"
-            onChange={changeInputs}
-          ></textarea>
-          <button className="formButton" type="submit">
-            ADD Event
-          </button>
-          {/* <Link to="/events">
+      </div>
+      <div className="admin-container-myevents-add">
+        <div className="myEvents"></div>
+        <form className="form-admin" onSubmit={handelSubmit}>
+          <div className="form-admin-title">
+            <p>Add new event</p>
+          </div>
+          <div className="admin-container-inputs">
+            <input
+              className="eventTitle"
+              placeholder="Event title"
+              value={newEvent.title}
+              name="title"
+              onChange={changeInputs}
+            />
+            <input
+              className="eventImage"
+              placeholder="Image"
+              value={newEvent.picture}
+              name="picture"
+              onChange={changeInputs}
+            />
+            <input
+              className="eventDate"
+              placeholder="Date: eg. 21 Feb"
+              value={newEvent.date}
+              name="date"
+              onChange={changeInputs}
+            />
+            <input
+              className="eventDate"
+              placeholder="Time: eg. 16:00 - 19:30"
+              value={newEvent.registered}
+              name="registered"
+              onChange={changeInputs}
+            />
+            <input
+              className="eventDate"
+              placeholder="Price: eg. ֏4500"
+              value={newEvent.ticket}
+              name="ticket"
+              onChange={changeInputs}
+            />
+            <input
+              className="eventDate"
+              placeholder="Address"
+              value={newEvent.address}
+              name="address"
+              onChange={changeInputs}
+            />
+            <select value={newEvent.field} name="field" onChange={changeInputs}>
+              <option value="music">Music</option>
+              <option value="education">Education</option>
+              <option value="culture">Culture</option>
+              <option value="movie">Movie</option>
+              <option value="tourism">Tourism</option>
+            </select>
+            <textarea
+              className="yousMessage"
+              placeholder="Description"
+              value={newEvent.info}
+              name="info"
+              onChange={changeInputs}
+            ></textarea>
+            <button className="formButton" type="submit">
+              ADD Event
+            </button>
+            {/* <Link to="/events">
             <button className="formButtonAdmin" type="submit">
               ADD Event
             </button>
           </Link> */}
-        </div>
-      </form>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
