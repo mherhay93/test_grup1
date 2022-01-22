@@ -36,17 +36,16 @@ const Admin = () => {
      throw Error("could not fetch tha data")
     }
     return res.json();
-    }).then(data =>{
-    setEvents([data, ...events])
+    }).then(() =>{
       setNewEvent({
        title: "",
-    picture: "",
-    date: "",
-    registered: "",
-    field: "",
-    ticket:"",
+      picture: "",
+      date: "",
+      registered: "",
+     field: "",
+      ticket:"",
       info: "",
-    address: "",
+     address: "",
     })
   }).catch(err => {
     console.log(err.message)
