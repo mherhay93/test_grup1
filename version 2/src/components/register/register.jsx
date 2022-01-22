@@ -3,8 +3,12 @@ import { Link } from "react-router-dom";
 
 
 import "../register/register.css";
+import { useTranslation } from 'react-i18next';
+
+
 
 const Register = () => {
+
   const [nameUser, setNameUser] = useState("");
   const [surnameUser, setSurnameUser] = useState("");
   const [userNik, setUserNik] = useState("");
@@ -18,6 +22,8 @@ const Register = () => {
   const [errorEmailAddress, setErrorEmailAddress] = useState(false);
   const [errorPassword, setErrorPassword] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
+
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (nameUser !== "" && errorNameUser !== true) {
@@ -119,44 +125,44 @@ const Register = () => {
     <div className="register-container">
       <div className="register-box">
         <div className="register-title">
-          <p>Account Register</p>
+          <p>{t("Account Register")}</p>
           <div>
-            <p>Have an account?</p>
-            <p>LOGIN NOW</p>
+            <p>{t("Have an account?")}</p>
+            <p>{t("LOGIN NOW")}</p>
           </div>
         </div>
         <form className="register-form">
           <input
             type="text"
-            placeholder="User Name"
+            placeholder={t("User Name")}
             onChange={(e) => {
               setNameUser(e.target.value);
             }}
           />
           <input
             type="text"
-            placeholder="User Surname"
+            placeholder={t("User Surname")}
             onChange={(e) => {
               setSurnameUser(e.target.value);
             }}
           />
           <input
             type="text"
-            placeholder="User Nik"
+            placeholder={t("User_Nik" )}
             onChange={(e) => {
               setUserNik(e.target.value);
             }}
           />
           <input
             type="text"
-            placeholder="Email Address"
+            placeholder={t("Email_Address")}
             onChange={(e) => {
               setEmailAddress(e.target.value);
             }}
           />
           <input
             type="password"
-            placeholder="Password"
+            placeholder={t("Password" )}
             onChange={(e) => {
               setPassword(e.target.value);
             }}
@@ -164,11 +170,11 @@ const Register = () => {
           <div className="checkBoxInput">
             <label>
               <input type="checkbox" className="adiminBox" name="admin" />
-              Admin
+              {t("Admin")}
             </label>
             <label>
               <input type="checkbox" className="userBox" name="admin" />
-              User
+              {t("User")}
             </label>
           </div>
           <Link to="/admin" className="register_login_button_link">
@@ -182,7 +188,7 @@ const Register = () => {
                   : { pointerEvents: "" }
               }
             >
-              LOGIN NOW
+             {t("LOGIN NOW")}
             </button>
           </Link>
           {!isDisabled && (
@@ -190,6 +196,7 @@ const Register = () => {
               Fill in all the fields in the correct format
             </h6>
           )}
+
         </form>
       </div>
     </div>

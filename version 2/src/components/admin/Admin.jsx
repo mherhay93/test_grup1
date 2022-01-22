@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
-import "./admin.css";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { useGlobalContext } from "../../context/EventContext";
-import Register from "../register/register";
+
+import "./admin.css";
 
 const Admin = () => {
+  const { t } = useTranslation();
+
   const [newEvent, setNewEvent] = useState({
     title: "",
     picture: "",
@@ -72,33 +75,33 @@ const Admin = () => {
         <div className="myEvents"></div>
         <form className="form-admin" onSubmit={handelSubmit}>
           <div className="form-admin-title">
-            <p>Add new event</p>
+            <p>{t("Add new event")}</p>
           </div>
           <div className="admin-container-inputs">
             <input
               className="eventTitle"
-              placeholder="Event title"
+              placeholder={t("Event title")}
               value={newEvent.title}
               name="title"
               onChange={changeInputs}
             />
             <input
               className="eventImage"
-              placeholder="Image"
+              placeholder={t("Image")}
               value={newEvent.picture}
               name="picture"
               onChange={changeInputs}
             />
             <input
               className="eventDate"
-              placeholder="Date: eg. 21 Feb"
+              placeholder={t("Date: eg. 21 Feb")}
               value={newEvent.date}
               name="date"
               onChange={changeInputs}
             />
             <input
               className="eventDate"
-              placeholder="Time: eg. 16:00 - 19:30"
+              placeholder={t("Time: eg. 16:00 - 19:30")}
               value={newEvent.registered}
               name="registered"
               onChange={changeInputs}
@@ -118,11 +121,11 @@ const Admin = () => {
               onChange={changeInputs}
             />
             <select value={newEvent.field} name="field" onChange={changeInputs}>
-              <option value="music">Music</option>
-              <option value="education">Education</option>
-              <option value="culture">Culture</option>
-              <option value="movie">Movie</option>
-              <option value="tourism">Tourism</option>
+              <option value="music">{t("Music")}</option>
+              <option value="education">{t("Education")}</option>
+              <option value="culture">{t("Culture")}</option>
+              <option value="movie">{t("Movie")}</option>
+              <option value="tourism">{t("Tourism")}</option>
             </select>
             <textarea
               className="yousMessage"
@@ -136,7 +139,7 @@ const Admin = () => {
             </button>
             {/* <Link to="/events">
             <button className="formButtonAdmin" type="submit">
-              ADD Event
+              {t("ADD Event")}
             </button>
           </Link> */}
           </div>

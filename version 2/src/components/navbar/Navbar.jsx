@@ -1,11 +1,25 @@
 import "./navbar.css";
 import logo from "../../img/logo.png";
+import Translate from '../translation/appTranslation';
+import { useState } from 'react';
+
 import { FaGlobe } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+
 
 
 const Navbar = () => {
+  
+  const { t } = useTranslation();
+
+   const [ show, setShow ] = useState(false);
+
+   function showHide() {
+      setShow(!show)
+   }
+  
   return (
     <nav className="main-nav">
       <div>
@@ -15,23 +29,24 @@ const Navbar = () => {
       </div>
       <div className="nav-links">
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink to="/">{t("Home")}</NavLink>
         </li>
         <li>
-          <NavLink to="/about">About</NavLink>
+          <NavLink to="/about">{t("About")}</NavLink>
         </li>
         <li>
-          <NavLink to="/events">Events</NavLink>
+          <NavLink to="/events">{t("Events")}</NavLink>
         </li>
         <li>
-          <NavLink to="/contacts">Contacts</NavLink>
+          <NavLink to="/contacts">{t("Contacts")}</NavLink>
         </li>
       </div>
       <div className="nav-social">
         <NavLink to="/admin">
           <RiAdminFill className="nav-logo" />
         </NavLink>
-        <FaGlobe className="nav-logo" />
+        <FaGlobe className="nav-logo" onClick={showHide}/>
+        {show && <Translate />}
       </div>
     </nav>
   );

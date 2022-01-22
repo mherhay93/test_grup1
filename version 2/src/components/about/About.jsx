@@ -1,12 +1,15 @@
 import React from 'react'
-import { useAwardData } from "../../context/aboutContext"
 import img_age from "../../img/img_age.png"
 import "./about.css"
 import { useNavigate } from "react-router-dom"
 import {FaChevronCircleUp, FaChevronCircleDown} from "react-icons/fa";
+import AboutAward from './aboutAwards';
+import { useTranslation } from 'react-i18next';
+
 
 
 const About = () => {
+  const { t } = useTranslation();
 
   const navigate = useNavigate()
 
@@ -14,25 +17,23 @@ const About = () => {
     navigate('/')
    }
 
-  const {award} = useAwardData()
-
   return (
     <>
    <div className="image_section">
       <div className="image_section_op">
         <div className="image_section_container">
           <div className="small_title">
-              all you need to know
+            {t("All_you_need")}
           </div>     
           <div className="big_title">
-            <strong>ABOUT  </strong> 
+            <strong>{t("About")} </strong> 
             HARMONI
           </div>     
           <div className="image_section_list">
             
             <ul>
-              <li className="list_home" onClick={goBack}><a href='#'>Home</a></li>
-              <li className="list_about">about us</li>
+              <li className="list_home" onClick={goBack}><a href='#'>{t("Home")}</a></li>
+              <li className="list_about">{t("About_us")}</li>
             </ul>   
           </div>
         </div>
@@ -44,42 +45,44 @@ const About = () => {
       <div className="management_container">
         <div className="section_title">
           <div className="section_small_title">
-              WE ARE HARMONI
+              {t("We_are_harmoni")}
           </div>
           <div className="section_big_title">
             <strong>No.1 </strong>
-            Events Management
+            {t("Events_management")}
           </div>
           <div className="managment_section_button">
-            <button>GET STARTED!</button>
+            <button>{t("Get_started")}</button>
           </div>
          </div>
          <div className="management_item">
             <div className="item_title">
               <h3 className="item_title_text">
-                Our Mission 
+                {t("Our_mission")}
 
                 </h3>
             </div>
             <div className="management_item_title">
-              Lorem ipsum dollor site amet the best consectuer adipiscing elites sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat insignia the consectuer adipiscing elit.
+              {t("mission_item_title")}
             </div>
             <div className="management_item_title2">
-              Lorem ipsum dollor site amet the best consectuer adipiscing elites sed diam nonummy nibh euismod.
+             {t("mission_item_title2")}
+
             </div>
           </div>
           <div className="management_item">
             <div className="item_title">
               <h3 className="item_title_text">
-                 Our Vission 
+                 {t("Our_vission")}
 
               </h3>
             </div> 
             <div className="management_item_title">
-              Lorem ipsum dollor site amet the best consectuer adipiscing elites sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat insignia the consectuer adipiscing elit.
+            {t("vission_item_title")} 
             </div>
             <div className="management_item_title2">
-              Lorem ipsum dollor site amet the best consectuer adipiscing elites sed diam nonummy nibh euismod.
+              Harmoni {t("vission_item_title2")} 
+
             </div>
         </div>
       </div>
@@ -93,11 +96,11 @@ const About = () => {
         <div className="winning_awards">
           <div className="winning_awards_title">
             <div className="awards_small_title">
-              HARMONI AWAED
+              {t("Harmoni_awaed")}
 
             </div>
             <div className="awards_big_title">
-              Our Winning <strong>Awards</strong>
+              {t("Our_winning")}<strong>{t("Awards")}</strong>
             </div>
           </div>
           <div className="award_item_area">
@@ -107,29 +110,7 @@ const About = () => {
             <span className="arrow_down">
               <FaChevronCircleDown />
             </span>
-            <div className="award_wrapper">
-              {
-                award.map(elem => (
-                               
-                  <div className="award_wrapper">
-                    <div className="award_item">
-                      <div className="award_content">
-                        <div className="award_title">
-                          <span className="award_date">
-                            {elem.winDate}
-                            </span>
-                              {elem.winAward}
-                        </div>
-                        <div className="m-0">
-                          {elem.title}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                            
-                             ) )
-                            }
-                        </div>
+            <AboutAward />
           </div>
         </div>
        
