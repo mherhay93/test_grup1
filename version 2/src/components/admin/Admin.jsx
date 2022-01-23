@@ -26,30 +26,30 @@ const Admin = () => {
   }
   const handelSubmit = (e) => {
     e.preventDefault()
-    // addEvents(newEvent)
-    fetch('http://localhost:8000/events', {
-      method: "POST",
-     body: JSON.stringify(newEvent),
-      headers: { 'Content-type': 'application/json; charset=UTF-8' }
-    }).then(res=>{
-      if(!res.ok){
-     throw Error("could not fetch tha data")
-    }
-    return res.json();
-    }).then(() =>{
-      setNewEvent({
-       title: "",
-      picture: "",
-      date: "",
-      registered: "",
-     field: "",
-      ticket:"",
-      info: "",
-     address: "",
-    })
-  }).catch(err => {
-    console.log(err.message)
-  })
+    addEvents(newEvent)
+  //   fetch('http://localhost:8000/events', {
+  //     method: "POST",
+  //    body: JSON.stringify(newEvent),
+  //     headers: { 'Content-type': 'application/json; charset=UTF-8' }
+  //   }).then(res=>{
+  //     if(!res.ok){
+  //    throw Error("could not fetch tha data")
+  //   }
+  //   return res.json();
+  //   }).then(() =>{
+  //     setNewEvent({
+  //      title: "",
+  //     picture: "",
+  //     date: "",
+  //     registered: "",
+  //    field: "",
+  //     ticket:"",
+  //     info: "",
+  //    address: "",
+  //   })
+  // }).catch(err => {
+  //   console.log(err.message)
+  // })
   }
 
   return (

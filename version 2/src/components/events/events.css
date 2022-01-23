@@ -126,6 +126,6 @@ button:active {
      font-size: 16px;
      background: linear-gradient(to bottom right, #ff3e00, #ffbe30) !important;
 }
-/* .heart{
- color: red;
-} */
+.heart{
+ color: rgb(228, 72, 72);
+}

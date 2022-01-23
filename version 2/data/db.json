@@ -100,7 +100,7 @@
   },
   {
     "_id": "7",
-    "isActive": "false",
+    "isActive": false,
     "picture": "img/spiderMan.jpg",
      "title": "Spider-Man",
     "field": "movie",
