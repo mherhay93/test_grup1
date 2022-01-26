@@ -1,7 +1,8 @@
 .main-hero {
   height: 60vh;
-  background: url('../../img/bg.jpg') center/cover no-repeat;
+  background: url('../../img/bg.jpg') center center/cover no-repeat;
   background-attachment: fixed;
+   position:relative;
 }
 
 .hero-container {
@@ -11,18 +12,20 @@
   align-items: center;
   flex-direction: column;
   color: var(--white);
-  background-color: rgba(20, 20, 20, 0.6)
+  background-color: rgba(20, 20, 20, 0.6);
 }
-
-.hero-info h2 {
+.hero-container h1{
+    font-size: 2.3vw;
+}
+/* .hero-info h2 {
   letter-spacing: var(--letterSpacing);
   text-align: center;
   padding: 10px;
-}
+} */
 
-.hero-info h1 {
+.hero-info h2 {
   color: var(--darkOrange);
-  font-size: 40px;
+   font-size: 2vw;
   padding: 10px 0 40px;
 }
 
@@ -43,4 +46,42 @@
 .line {
   border-right: 2px solid var(--white);
   padding-right: 25px;
+}
+.arrow {
+  font-size:30px;
+}
+.left{
+  position: absolute;
+  top:45%;
+  left:5%;
+  z-index: 3;
+}
+.right {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  z-index: 3;
+}
+.arrow:hover {
+  color: var(--darkOrange);
+}
+.input-container {
+  position: absolute;
+  bottom: 5%;
+  left: 42%;
+}
+
+.input-container li {
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+.input-container li input {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+ .main-hero {
+   height: 20vh;
+ }
 }

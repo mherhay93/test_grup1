@@ -79,3 +79,10 @@
 .nav-logo{
   color: var(--black)
 }
+
+@media screen and (max-width: 992px) {
+  .logo{
+    display: none;
+  }
+
+}

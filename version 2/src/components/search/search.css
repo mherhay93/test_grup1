@@ -6,6 +6,7 @@
   /* justify-content: space-evenly; */
   padding: 0 10%;
   color: var(--white);
+    font-size: 1.4vw;
 }
 
 .search-title {
@@ -31,4 +32,22 @@ button {
 
 .search-form button {
   background-color: var(--darkGray);
+}
+
+@media screen and (max-width: 992px) {
+ .search-container {
+   height: 15vh;
+ flex-direction: column;
+ }
+ .search-title {
+   margin: 2% auto;
+ }
+ .search-form input
+ {
+   width: 20%;
+   padding: 10px 15px;
+ }
+ .search-form {
+   margin-left: 35%;
+ }
 }

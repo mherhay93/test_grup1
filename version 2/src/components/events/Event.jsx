@@ -2,6 +2,7 @@ import { GoLocation, GoClock } from "react-icons/go";
 import { FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+import { useGlobalContext } from "../../context/EventContext";
 
 
 export default function Event({
@@ -12,11 +13,11 @@ export default function Event({
   registered,
   date,
   ticket,
+  isActive,
   isHidden,
 }) {
-
   const { t } = useTranslation();
-
+  const { isLikedHandler } = useGlobalContext() 
 
   return !isHidden ? (
     <section className="event-box">
@@ -44,7 +45,9 @@ export default function Event({
           <button className="info-btn">{t("Details")}</button>
         </Link>
         <div className="like-container">
-          <FaRegHeart className="heart" />
+          <FaRegHeart className= {isActive? 'heart' : '' }
+           onClick={() =>isLikedHandler(_id)}
+          />
         </div>
       </div>
     </section>

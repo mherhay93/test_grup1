@@ -18,7 +18,7 @@ const Admin = () => {
     date: "",
     registered: "",
     field: "",
-    ticket: "",
+    ticket:"",
     info: "",
     address: "",
   });
@@ -30,41 +30,28 @@ const Admin = () => {
     setNewEvent({
       ...newEvent,
       isActive: false,
-      [name]: value,
-    });
-  };
+      _id:events.length + "",
+        [name]: value}) 
+  }
   const handelSubmit = (e) => {
-    // e.preventDefault();
-    // addEvents(newEvent)
-    console.log(newEvent);
-    fetch("http://localhost:8000/events", {
-      method: "POST",
-      body: JSON.stringify(newEvent),
-      headers: { "Content-type": "application/json; charset=UTF-8" },
+    e.preventDefault()
+    addEvents(newEvent)
+  // fetch('http://localhost:8000/events', {
+  //     method: "POST",
+  //     headers: { "Content-type": "application/json" },
+  //     body: JSON.stringify(newEvent)
+  //   }).then(() => console.log("new event added"))
+     setNewEvent({
+       title: "",
+       picture: "",
+       date: "",
+       registered: "",
+       field: "",
+       ticket:"",
+      info: "",
+      address: "",
     })
-      .then((res) => {
-        // if (!res.ok) {
-        //   throw Error("could not fetch tha data");
-        // }
-        return res.json();
-      })
-      .then((data) => {
-        setEvents([data, ...events]);
-        setNewEvent({
-          title: "",
-          picture: "",
-          date: "",
-          registered: "",
-          field: "",
-          ticket: "",
-          info: "",
-          address: "",
-        });
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
-  };
+  }
 
   return (
     <div className="admin-container">
