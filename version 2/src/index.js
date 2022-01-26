@@ -4,13 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { AppProvider } from './context/EventContext'
-import  {AwardProvider}  from './context/aboutContext';
+import { AwardProvider } from './context/aboutContext';
+import {RegisterProvider} from './context/registerContext.jsx'
+import {isDisabledIsRegister} from './components/register/register'
 
 ReactDOM.render(
   <React.StrictMode>
     <AppProvider>
       <AwardProvider>
-        <App />
+        <RegisterProvider>
+          <App />
+        </RegisterProvider>
       </AwardProvider>
     </AppProvider>
   </React.StrictMode>,

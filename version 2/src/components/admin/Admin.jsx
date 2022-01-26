@@ -2,11 +2,15 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useGlobalContext } from "../../context/EventContext";
+import { useDisabledRegister } from "../../context/registerContext.jsx";
 
 import "./admin.css";
 
 const Admin = () => {
   const { t } = useTranslation();
+
+  const { dataAdmin } = useDisabledRegister();
+  console.log(dataAdmin);
 
   const [newEvent, setNewEvent] = useState({
     title: "",
