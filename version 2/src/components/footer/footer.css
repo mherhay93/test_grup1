@@ -1,56 +1,123 @@
-/* footer */
-
 .footer-container {
-  background-color: var(--darkGray);
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-evenly;
-  padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: #212529;
 }
 
-.footer-social-links {
-  margin-top: 8%;
+.footer-social {
+    width: 60%;
+    margin: 20px auto 20px auto;
+    height: 7vh;
+}
+
+.icons-social {
+    text-decoration: none;
+    font-size: 2vw;
+    margin: 8px;
 }
 
 .social-icon {
-  color: var(--black);
-  font-size: 40px;
-  padding: 8px;
-  margin-top: 15%;
+    color: #878787;
 }
 
 .social-icon:hover {
-  color: var(--darkOrange);
-}
-
-.social-icon:active {
-  transform: scale(0.98);
-  color: var(--lightOrange);
- 
-}
-.footer-event-links h2 {
-  color: var(--lightOrange);
-  margin-bottom: 20px;
-}
-
-.footer-event-links li {
-  margin: 20px;
-  cursor: pointer;
-  color: var(--black);
-  transition: all 0.8 ease-in-out;
-}
-
-.footer-event-links li:hover {
-  color: var(--lightOrange);
-  transform: translate(5px);
-}
-
-.footer-gallery h2 {
-  color: var(--lightOrange);
+    color: #ffbe30;
 }
 
 .copy-right {
-  padding-top: 30%;
-  color: var(--black);
-  font-size: 12px;
+    color: #878787;
+    font-weight: 300;
+}
+
+.copy-right:hover {
+    color: #ffbe30 !important;
+    cursor: pointer;
+}
+
+.lists-footer {
+    padding: 10px;
+    border-bottom: 1px solid #87878778;
+    text-align: left;
+}
+
+.links-to-nav {
+    width: 20%;
+    margin: 10px;
+}
+
+.lists-footer a {
+    text-decoration: none;
+    color: #878787;
+    font-weight: 300;
+}
+
+li a:hover {
+    color: #ffbe30;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+
+.footer-social-links {
+    width: 25%;
+    margin-top: 15px;
+    line-height: 2;
+}
+
+.contact {
+    width: 30%;
+    text-align: left;
+}
+
+.contact-footer-icon {
+    display: block;
+    color: white;
+    margin: 10px;
+    background-color: #2e2e2e;
+}
+
+.contact-icon-back-footer {
+    display: inline-block;
+}
+
+.contact-icon-back-footer {
+    display: inline-block;
+    padding: 10px 12px 10px 12px;
+    background-color: #3b3b3b;
+    vertical-align: sub;
+}
+
+.contact-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.contact-info-footer {
+    letter-spacing: 3px;
+    margin: 15%;
+}
+
+.contact-mail-footer {
+    letter-spacing: 3px;
+    margin: 15%;
+}
+
+.contact-number-footer {
+    letter-spacing: 3px;
+    margin: 15%;
+}
+
+.contact-icon:hover {
+    color: #ffbe30;
+    cursor: pointer;
+}
+
+.infos:hover {
+    color: #ffbe30;
+    cursor: pointer;
+}
+
+.contact a {
+    cursor: default;
 }

@@ -1,42 +1,60 @@
 import './footer.css'
-import logo from '../../img/logo.png'
-import { FaFacebook,FaInstagram,FaYoutubeSquare,FaTwitter} from "react-icons/fa";
+import logo from '../../img/1.site-logo.png'
+import {FaFacebook, FaInstagram, FaYoutubeSquare, FaTwitter} from "react-icons/fa";
+import {AiFillPhone} from "react-icons/ai";
+import {BsFillEnvelopeFill} from "react-icons/bs";
+import {IoLocationSharp} from "react-icons/io5"
+import {NavLink} from 'react-router-dom';
 
 const Footer = () => {
-  return (
-    <footer className="footer-container">
-     
-        <div className="footer-social-links">
-          <img src={logo} alt='logo'/>
-          <div className="footer-social">
-            <a href="#"><FaFacebook className='social-icon'/></a>
-            <a href="#"><FaInstagram className='social-icon' /></a>
-            <a href="#"><FaYoutubeSquare className='social-icon' /></a>
-            <a href="#"><FaTwitter className='social-icon' /></a>
-          </div>
-         <p className="copy-right"> © Copyright 2022. All Rights Reserved.</p>
-        </div>
-      <div className="map-container">
-        
-        {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11501.839832500507!2d-78.8196662!3d43.8877396!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6246b27630b5ff54!2sHarmony%20Event%20Centre!5e0!3m2!1shy!2s!4v1642005892187!5m2!1shy!2s" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> */}
-      </div>
-      <div className="footer-event-links">
-        <h2>Discover Events</h2>
-        <li>Business Meeting</li>
-        <li>Music Event</li>
-        <li>Food Event</li>
-        <li>Conference</li>
-        <li>Exhibition</li>
-
-      </div>
-      <div className="footer-gallery">
-        <h2>Coming Events</h2>
-        
-      </div>
-    </footer>
-      
-    
-  )
+    return (
+        <footer className="footer-container">
+            <div className="footer-social-links">
+                <img src={logo} alt='logo'/>
+                <div className="footer-social">
+                    <a href="#" className="icons-social"><FaFacebook className='social-icon'/></a>
+                    <a href="#" className="icons-social"><FaInstagram className='social-icon'/></a>
+                    <a href="#" className="icons-social"><FaYoutubeSquare className='social-icon'/></a>
+                    <a href="#" className="icons-social"><FaTwitter className='social-icon'/></a>
+                </div>
+                <p className="copy-right"> © Copyright 2022. All Rights Reserved.</p>
+            </div>
+            <div className="links-to-nav">
+                <li className="lists-footer">
+                    <NavLink to='/'>Home</NavLink>
+                </li>
+                <li className="lists-footer">
+                    <NavLink to='/about'>About</NavLink>
+                </li>
+                <li className="lists-footer">
+                    <NavLink to='/events'>Events</NavLink>
+                </li>
+                <li className="lists-footer">
+                    <NavLink to='/contacts'>Contacts</NavLink>
+                </li>
+            </div>
+            <div className="contact">
+                <a href="#" className="contact-footer-icon">
+                    <div className="contact-icon-back-footer">
+                        <IoLocationSharp className="location-icon-footer contact-icon"/>
+                    </div>
+                    <span className="contact-info-footer infos">Armenia,Erevan</span>
+                </a>
+                <a href="#" className="contact-footer-icon">
+                    <div className="contact-icon-back-footer">
+                        <BsFillEnvelopeFill className="message-icon-footer contact-icon"/>
+                    </div>
+                    <span className="contact-mail-footer infos">info@Harmoni.com</span>
+                </a>
+                <a href="#" className="contact-footer-icon">
+                    <div className="contact-icon-back-footer">
+                        <AiFillPhone className="phone-icon-footer contact-icon"/>
+                    </div>
+                    <span className="contact-number-footer infos">10-2222-9999</span>
+                </a>
+            </div>
+        </footer>
+    )
 }
 
 export default Footer
