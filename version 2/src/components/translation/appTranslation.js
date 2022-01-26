@@ -5,6 +5,7 @@ import { initReactI18next } from "react-i18next";
 import i18next from 'i18next';
 
 
+
 i18n
   .use(initReactI18next) 
   .use(LanguageDetector)
@@ -29,11 +30,13 @@ const languages = [
     code:'ru',
     name: "Русский",
     country_code: "ru"
+
   },
   {
     code:'en',
     name: "English",
-    country_code: "en"
+    country_code: "gb"
+
   },
   {
     code:'am',
@@ -51,7 +54,6 @@ function Translate() {
     <>
 
 <div className='languages'>
-
 {languages.map(({code,name, country_code}) => (
 
   <li key={country_code}>
@@ -60,6 +62,7 @@ function Translate() {
     onClick={() => i18next.changeLanguage(code)}>
     {name}
     </p>
+  
   </li>
 ))}
          </div>

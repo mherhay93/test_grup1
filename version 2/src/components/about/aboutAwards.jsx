@@ -38,6 +38,8 @@ function AboutAward(){
                              ) )
                             }
                         </div>
+                        {/* {t("awards").map(elem => console.log(elem))} */}
+
         </>
 
     )
