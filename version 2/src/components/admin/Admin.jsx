@@ -11,7 +11,7 @@ const Admin = () => {
     registered: "",
     field: "",
     ticket:"",
-      info: "",
+    info: "",
     address: "",
   })
   
@@ -21,35 +21,28 @@ const Admin = () => {
     const { value, name } = e.target
     setNewEvent ({
       ...newEvent,
-      isActive:false,
+      // isActive:false,
         [name]: value}) 
   }
   const handelSubmit = (e) => {
     e.preventDefault()
-    addEvents(newEvent)
-  //   fetch('http://localhost:8000/events', {
-  //     method: "POST",
-  //    body: JSON.stringify(newEvent),
-  //     headers: { 'Content-type': 'application/json; charset=UTF-8' }
-  //   }).then(res=>{
-  //     if(!res.ok){
-  //    throw Error("could not fetch tha data")
-  //   }
-  //   return res.json();
-  //   }).then(() =>{
-  //     setNewEvent({
-  //      title: "",
-  //     picture: "",
-  //     date: "",
-  //     registered: "",
-  //    field: "",
-  //     ticket:"",
-  //     info: "",
-  //    address: "",
-  //   })
-  // }).catch(err => {
-  //   console.log(err.message)
-  // })
+    // addEvents(newEvent)
+  fetch('http://localhost:8000/events', {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(newEvent)
+    }).then(() => console.log("new event added"))
+     console.log(newEvent)
+     setNewEvent({
+       title: "",
+       picture: "",
+       date: "",
+       registered: "",
+       field: "",
+       ticket:"",
+      info: "",
+      address: "",
+    })
   }
 
   return (
@@ -63,7 +56,6 @@ const Admin = () => {
           <input className="eventTitle" placeholder="Event title"
             value = {newEvent.title}
             name="title" 
-            
             onChange = {changeInputs}
           />
           <input className="eventImage" placeholder="Image"

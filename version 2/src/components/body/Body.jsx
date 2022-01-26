@@ -19,7 +19,7 @@ const Body = () => {
           <h1>{ events[currentImg].title}</h1>
           <div className="hero-info">
              {/* <h2 >One Stop</h2> */}
-             <h1>Event planner</h1>
+             <h2>Event planner</h2>
            </div>
         <div className='arrow left'
            onClick ={prevSlideHandler}
