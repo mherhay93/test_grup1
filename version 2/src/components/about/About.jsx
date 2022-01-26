@@ -1,10 +1,11 @@
 import React from 'react'
 import img_age from "../../img/img_age.png"
-import "./about.css"
-import { useNavigate } from "react-router-dom"
+import { useNavigate,  Link } from "react-router-dom"
 import {FaChevronCircleUp, FaChevronCircleDown} from "react-icons/fa";
 import AboutAward from './aboutAwards';
 import { useTranslation } from 'react-i18next';
+
+import "./about.css"
 
 
 
@@ -52,7 +53,9 @@ const About = () => {
             {t("Events_management")}
           </div>
           <div className="managment_section_button">
+            <Link to="/events">
             <button>{t("Get_started")}</button>
+            </Link>
           </div>
          </div>
          <div className="management_item">

@@ -150,16 +150,14 @@
     font-weight: 900;
 }
 
-
 .managment_section_button{
     height: 40%;
     align-items: center;
     display: flex;
 }
 
-
 .managment_section_button button{
-    width: 40%;
+    width: 80%;
     border: none;
     margin: 10px;
     font-weight: 800;
