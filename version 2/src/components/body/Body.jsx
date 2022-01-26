@@ -35,7 +35,7 @@ const Body = () => {
          <ul className="input-container">
             {events.map((item,index)=>(
               <li key={item._id}>
-                <input type="radio" name="slide" value={index} onClick={() =>{
+                <input type="radio" name="slide" value={currentImg} onClick={() =>{
                  setCurrentImg(index)
                  }} checked={currentImg === index} /> 
               </li>  

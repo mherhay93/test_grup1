@@ -1,6 +1,7 @@
 import { createContext,useContext, useEffect, useState } from "react";
 
 
+
 const EventContext = createContext()
 //localStorage
 //  const getLocalStorage = () => {
@@ -43,34 +44,18 @@ const AppProvider = ({ children }) => {
     }, [])
  
     //add events
- 
-  // const addEvents = async (val) => {
-  //   console.log("val", val)
-  //     const response = await fetch('http://localhost:8000/events', {
-  //      method: 'POST',
-  //     headers: {
-  //     'Accept': 'application/json',
-  //     'Content-Type': 'application/json'
-  //   },
-  //   body: JSON.stringify(val)
-  // });
-     
-  //  console.log(response)
-  //  console.log(events)
-  // }
 
-//   const addEvents = (val) => {
-//     console.log(val)
-//    fetch('http://localhost:8000/events', {
-//   method: 'POST',
-//   body: JSON.stringify(val),
-//   headers: {
-//     'Content-type': 'application/json; charset=UTF-8',
-//   },
-// })
-//   .then((response) => response.json())
-//   .then((json) => console.log(json));
-//   }
+  const addEvents = (val) => {
+    console.log(val)
+   fetch('http://localhost:8000/events', {
+   method: 'POST',
+   body: JSON.stringify(val),
+   headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  fetchData()
+  }
   
   //sort events
   const filterEvents = (val) => {
@@ -97,8 +82,8 @@ const AppProvider = ({ children }) => {
         return item
      }
    }))
-   
-}
+  }
+  
   return (
     <EventContext.Provider
       value={{
@@ -107,7 +92,7 @@ const AppProvider = ({ children }) => {
         filterEvents,
         sortEvents,
         isLikedHandler,
-        // addEvents
+        addEvents
       }}
     >
       {children}

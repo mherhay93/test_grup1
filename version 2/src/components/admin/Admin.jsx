@@ -21,18 +21,18 @@ const Admin = () => {
     const { value, name } = e.target
     setNewEvent ({
       ...newEvent,
-      // isActive:false,
+      isActive: false,
+      _id:events.length + "",
         [name]: value}) 
   }
   const handelSubmit = (e) => {
     e.preventDefault()
-    // addEvents(newEvent)
-  fetch('http://localhost:8000/events', {
-      method: "POST",
-      headers: { "Content-type": "application/json" },
-      body: JSON.stringify(newEvent)
-    }).then(() => console.log("new event added"))
-     console.log(newEvent)
+    addEvents(newEvent)
+  // fetch('http://localhost:8000/events', {
+  //     method: "POST",
+  //     headers: { "Content-type": "application/json" },
+  //     body: JSON.stringify(newEvent)
+  //   }).then(() => console.log("new event added"))
      setNewEvent({
        title: "",
        picture: "",
