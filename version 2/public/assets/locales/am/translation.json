@@ -62,9 +62,41 @@
     "Add new event":"Ավելացնել նոր իրադարձություն",
     "Event title":"Միջոցառման վերնագիր",
     "Image":"Պատկեր",
-    "Date: eg. 21 Feb":"Ամսաթիվ` օր` 21 փետրվար",
-    "Time: eg.":"Ժամանակը՝ օր` 16:00 - 19:30",
-    "ADD Event":"ԱՎԵԼԱՑՆԵԼ Իրադարձություն"
+    "Date: eg. 21 Feb":"Ամսաթիվ` օր. 21 փետրվար",
+    "Time: eg. 16:00 - 19:30":"Ժամանակը՝ օր. 16:00 - 19:30",
+    "ADD Event":"ԱՎԵԼԱՑՆԵԼ Իրադարձություն",
+    "awards": [
+      {
+        "winAward":"hay1st Place For Unique Events 2018",
+        "winDate": "AUG 2015",
+        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
+      },
+      {
+        "winAward":"1st Winner Best New Years Events",
+        "winDate": "MAY 2014",
+        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
+      },
+      {
+        "winAward":"1st Place International Events Awards",
+        "winDate": "DEC 2013",
+        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
+      },
+      {
+        "winAward":"1st Place For Unique Events 2018",
+        "winDate": "SEP 2018",
+        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
+      },
+      {
+        "winAward":"1st Winner Best New Years Events",
+        "winDate": "JULY 2016",
+        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
+      },
+      {
+        "winAward":"1st Place International Events Awards",
+        "winDate": "JAN 2017",
+        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
+      }
+    ]
 
 
 

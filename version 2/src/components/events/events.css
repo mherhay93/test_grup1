@@ -126,6 +126,8 @@ button:active {
      font-size: 16px;
      background: linear-gradient(to bottom right, #ff3e00, #ffbe30) !important;
 }
-/* .heart{
- color: red;
-} */
+.moreEvents{
+  background-color: var(--lightOrange);
+  color: white;
+ margin: 0 auto;
+}
