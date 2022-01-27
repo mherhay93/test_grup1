@@ -53,7 +53,7 @@
     font-weight: 300;
 }
 
-li a:hover {
+.lists-footer a:hover {
     color: #ffbe30;
     transition: 0.3s;
     margin-left: 10px;

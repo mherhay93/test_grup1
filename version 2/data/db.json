@@ -49,34 +49,6 @@
   ],
   "events": [
     {
-      "_id": "0",
-      "id": 0,
-      "isActive": true,
-      "picture": "img/nutcracker.jpg",
-      "title": "P.Tchaikovsky The Nutcracker",
-      "field": "culture",
-      "ticket": "from 3500",
-      "date": "Jan 28",
-      "registered": "19:00 - 21:30",
-      "address": "Opera and Ballet Theatre ",
-      "info": "P.Tchaikovsky The Nutcracker: Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”.\r\n",
-      "isHidden": false
-    },
-    {
-      "_id": "1",
-      "id": 1,
-      "isActive": true,
-      "picture": "img/mezzo.jpg",
-      "title": "G-Flex Band at Mezzo",
-      "field": "music",
-      "ticket": "from 5000",
-      "date": "Jan 28",
-      "registered": "20:00 - 23:30",
-      "address": "Mezzo Club",
-      "info": "G-Flex Band at Mezzo:  Among them are 3 theatres: Drama Theater after Hrachya Ghaplanyan, Young Spectator’s Theater and the Artistic Theater “Mher Mkrtchyan”; 19 libraries, 5 museums: Yerevan History Museum, Karen Demirchyan Museum, Museum of Contemporary Art, Historical and Archaeological Reserve-Museum Erebuni and Fridjof Nansen Museum. There are also 26 municipal music and art schools, 17 cultural and art centres: Children’s Philharmonic after Yu. Bakhshyan., Children’s Philharmonic “Little Singers of Armenia”, the brass band “Yerevan”, the city centre of children’s and youth’s creativity, Yerevan Zoological Garden, cultural centre “Hay-Art”. .\r\n",
-      "isHidden": false
-    },
-    {
       "_id": "2",
       "id": 2,
       "isActive": true,
@@ -135,7 +107,7 @@
     {
       "_id": "6",
       "id": "6",
-      "isActive": true,
+      "isActive": false,
       "picture": "img/ornifl.jpg",
       "title": "Ornifl",
       "field": "culture",
@@ -149,7 +121,7 @@
     {
       "_id": "7",
       "id": "7",
-      "isActive": true,
+      "isActive": false,
       "picture": "img/spiderMan.jpg",
       "title": "Spider-Man",
       "field": "movie",
@@ -256,6 +228,30 @@
       "_id": "14",
       "id": "Slbn-LB",
       "isHidden": false
+    },
+    {
+      "title": "",
+      "picture": "",
+      "date": "",
+      "registered": "",
+      "field": "",
+      "ticket": "",
+      "info": "",
+      "address": "",
+      "id": "HDLm97a",
+      "isHidden": false,
+      "isActive": true
+    },
+    {
+      "title": "",
+      "picture": "",
+      "date": "",
+      "registered": "",
+      "field": "",
+      "ticket": "",
+      "info": "",
+      "address": "",
+      "id": "ni7ZKLi"
     }
   ]
 }

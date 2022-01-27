@@ -16,7 +16,6 @@ import User from './components/user/user';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-
 function App() {
   return (
     <BrowserRouter>
