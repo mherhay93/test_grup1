@@ -2,15 +2,14 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useGlobalContext } from "../../context/EventContext";
-import { useDisabledRegister } from "../../context/registerContext.jsx";
-
+import { useServerData } from "../../context/registerContext";
 import "./admin.css";
 
 const Admin = () => {
   const { t } = useTranslation();
 
-  const { dataAdmin } = useDisabledRegister();
-  console.log(dataAdmin);
+  const { a } = useServerData();
+  console.log(a);
 
   const [newEvent, setNewEvent] = useState({
     title: "",
@@ -18,7 +17,7 @@ const Admin = () => {
     date: "",
     registered: "",
     field: "",
-    ticket:"",
+    ticket: "",
     info: "",
     address: "",
   });
@@ -30,28 +29,29 @@ const Admin = () => {
     setNewEvent({
       ...newEvent,
       isActive: false,
-      _id:events.length + "",
-        [name]: value}) 
-  }
+      _id: events.length + "",
+      [name]: value,
+    });
+  };
   const handelSubmit = (e) => {
-    e.preventDefault()
-    addEvents(newEvent)
-  // fetch('http://localhost:8000/events', {
-  //     method: "POST",
-  //     headers: { "Content-type": "application/json" },
-  //     body: JSON.stringify(newEvent)
-  //   }).then(() => console.log("new event added"))
-     setNewEvent({
-       title: "",
-       picture: "",
-       date: "",
-       registered: "",
-       field: "",
-       ticket:"",
+    e.preventDefault();
+    addEvents(newEvent);
+    // fetch('http://localhost:8000/events', {
+    //     method: "POST",
+    //     headers: { "Content-type": "application/json" },
+    //     body: JSON.stringify(newEvent)
+    //   }).then(() => console.log("new event added"))
+    setNewEvent({
+      title: "",
+      picture: "",
+      date: "",
+      registered: "",
+      field: "",
+      ticket: "",
       info: "",
       address: "",
-    })
-  }
+    });
+  };
 
   return (
     <div className="admin-container">

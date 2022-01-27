@@ -1,12 +1,9 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
 import { Link } from "react-router-dom";
-import { RegisterProvider } from "../../context/registerContext";
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
 
 import "../register/register.css";
-
-const isDisabledIsRegister = React.createContext(null);
 
 const Register = () => {
   const { t } = useTranslation();
@@ -59,9 +56,6 @@ const Register = () => {
 
   return (
     <div className="register-container">
-      <isDisabledIsRegister.Provider value={inRegister}>
-        <RegisterProvider />
-      </isDisabledIsRegister.Provider>
       <div className="register-box">
         <div className="register-title">
           <p>{t("Account Register")}</p>
@@ -72,7 +66,7 @@ const Register = () => {
         </div>
         <form
           className="register-form"
-          onClick={handleSubmit(submitDataRegister)}
+          onChange={handleSubmit(submitDataRegister)}
         >
           <input
             type="text"
@@ -132,7 +126,6 @@ const Register = () => {
                 type="radio"
                 className="adiminBox"
                 name="admin"
-                {...register("admin", { required: true })}
               />
               {t("Admin")}
             </label>
@@ -140,8 +133,7 @@ const Register = () => {
               <input
                 type="radio"
                 className="userBox"
-                name="user"
-                {...register("admin", { required: true })}
+                name="admin"
               />
               {t("User")}
             </label>
@@ -166,7 +158,7 @@ const Register = () => {
             </button>
           )}
         </form>
-        {inRegister && !isValid ? (
+        {!inRegister ? (
           ""
         ) : (
           <span className="errorMessage">
@@ -177,10 +169,6 @@ const Register = () => {
     </div>
   );
 };
-
-const useIsDisabledIsRegister = () => useContext(isDisabledIsRegister);
-
-export { useIsDisabledIsRegister, isDisabledIsRegister };
 
 export default Register;
 

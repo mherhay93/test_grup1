@@ -9,48 +9,6 @@
       "email": "john@gmail.com",
       "backgroundImg": "https://res.cloudinary.com/dslaqvh3p/image/upload/socialCover/qdb7i2bujwwcmd0ax9mw.jpg",
       "picture": "https://res.cloudinary.com/dslaqvh3p/image/upload/socialCover/uaurcczgq9vkpxosnejd.jpg"
-    },
-    {
-      "userName": "Mher",
-      "userSurname": "Hayrapetyan",
-      "userNik": "mherhay",
-      "email": "mherhay93@gmail.com",
-      "password": "123456",
-      "id": "C9Wytbo"
-    },
-    {
-      "userName": "aaaaaaaaaaaaaa",
-      "userSurname": "aaaaaaaaaaaaaaaaaaa",
-      "userNik": "aaaaaaaaaaaaaaaaaaa",
-      "email": "aaaaaaaaaaaaaaaaaaaaa@gmail.com",
-      "password": "aaaaaaaaaaaaaaaa",
-      "id": "7dUy03n"
-    },
-    {
-      "userName": "aaaaaaaaaaaaaaaaaaaaaaa",
-      "userSurname": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "userNik": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "email": "aaaaaaaaaaaaaaaaaaaaa@gmail.comaaaaaaaaaa",
-      "password": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "id": "Bde2D0T"
-    },
-    {
-      "userName": "fdsfdsf",
-      "userSurname": "fdsfsdfdsf",
-      "userNik": "dsfsdf",
-      "email": "sdfdsf",
-      "password": "dsfsdfdsf",
-      "admin": null,
-      "id": "afxuPA4"
-    },
-    {
-      "userName": "ds",
-      "userSurname": "sdasdasd",
-      "userNik": "sdsd",
-      "email": "ds",
-      "password": "sdds",
-      "admin": null,
-      "id": "Xve2zIO"
     }
   ],
   "events": [
