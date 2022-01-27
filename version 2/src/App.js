@@ -11,9 +11,9 @@ import EventDetail from './components/events/EventDetail';
 import Admin from './components/admin/Admin';
 import Register from './components/register/register';
 import Login from './components/login/iogin';
+import User from './components/user/user';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
           <Route path="/events/:id" element={<EventDetail />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/user" element={<User />}/>
         </Routes>
         <Footer />
       </main>

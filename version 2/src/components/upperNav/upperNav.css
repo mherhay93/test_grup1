@@ -16,11 +16,13 @@
 .nav-info1 {
   margin-right: 10px;
   cursor: pointer;
+  color:var(--white);
 }
 
 .nav-info2 {
   margin-left: 10px;
   cursor: pointer;
+  color:var(--white);
 }
 
 .nav-icon {

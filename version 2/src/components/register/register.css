@@ -1,85 +1,92 @@
 .register-container {
-    display: flex;
-    justify-content: center;
-    background-image: url(../../img/galact.jpg);
+  display: flex;
+  justify-content: center;
+  background-image: url(../../img/galact.jpg);
 }
 
 .register-box {
-    background: linear-gradient( 90deg, rgba(253, 93, 14, 255) 0%, rgba(244, 170, 47, 255) 100%);
-    width: 800px;
-    height: 650px;
+  background: linear-gradient(
+    90deg,
+    rgba(253, 93, 14, 255) 0%,
+    rgba(244, 170, 47, 255) 100%
+  );
+  width: 800px;
+  height: 650px;
 }
 
 .register-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
 }
 
-.register-title>div {
-    display: flex;
-    margin-top: 5px;
-    align-items: center;
+.register-title > div {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
 }
 
 .register-title > p:nth-child(1) {
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
-.register-title > div > p:nth-child(1){
-    color: white;
-    font-size: 14px;
-    font-family: sans-serif;
+.register-title > div > p:nth-child(1) {
+  color: white;
+  font-size: 14px;
+  font-family: sans-serif;
 }
 
-.register-title > div > p:nth-child(2){
-    margin-left: 10px;
-    color: white;
-    font-size: 18px;
-    font-family: sans-serif;
-    font-weight: bold;
+.register-title > div > p:nth-child(2) {
+  margin-left: 10px;
+  color: white;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
-
 
 .register-form {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .register-form > input {
-    height: 50px;
-    width: 410px;
-    border-radius: 50px;
-    border: none;
-    margin-top: 25px;
-    padding: 0px 25px;
-    background-color: #f7f7f7;;
+  height: 50px;
+  width: 410px;
+  border-radius: 50px;
+  border: none;
+  margin-top: 25px;
+  padding: 0px 25px;
+  background-color: #f7f7f7;
 }
 
 .checkBoxInput {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .checkBoxInput > * {
-    height: 20px;
-    width: 20px;
-    margin-left: 30px;
-    color: white;
+  height: 20px;
+  width: 20px;
+  margin-left: 30px;
+  color: white;
 }
 
+.register_login_button_link {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
 
-
-.register-form > button {
-    color: #F97F1D;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: sans-serif;
-    cursor: pointer;
+.register_login_button {
+  color: #f97f1d;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
 }

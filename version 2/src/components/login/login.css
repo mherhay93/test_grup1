@@ -1,7 +1,7 @@
 .login-container {
   display: flex;
   justify-content: center;
-  background-image: url('../../img/slider-bg3.jpg');
+  background-image: url("../../img/slider-bg3.jpg");
 }
 
 .login-box {
@@ -40,7 +40,7 @@
   margin-top: 50px;
 }
 
-.login-form > * {
+.login-form > input {
   height: 50px;
   width: 410px;
   border-radius: 50px;
@@ -50,10 +50,32 @@
   background-color: #f7f7f7;
 }
 
-.login-form > button {
+.login_button_link {
+  display: flex;
+  justify-content: center;
+}
+
+.login_button_link > button {
+  margin: 15px;
+  width: 100%;
+  padding: 12px 86px;
   color: #f97f1d;
   font-size: 18px;
   font-weight: bold;
   font-family: sans-serif;
-  cursor: pointer;
+
+}
+
+.login-form > button {
+  color: #f97f1d;
+  margin: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+.errorMessage {
+  display: flex;
+  justify-content: center;
+  color: red;
 }

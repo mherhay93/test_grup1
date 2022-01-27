@@ -3,17 +3,17 @@
 }
 
 .form-contactUs::before {
-  background-image: url("../../img/form-background.png");
-  background-repeat: no-repeat;
-  content: "";
-  position: absolute;
-  background-size: 100%;
-  filter: brightness(51%);
-  top: 161px;
-  left: 0;
-  width: 100%;
-  height: 1070px;
-  z-index: -1;
+    background-image: url("../../img/form-background.png");
+    background-repeat: no-repeat;
+    content: "";
+    position: absolute;
+    background-size: 100%;
+    filter: brightness(51%);
+    top: 161px;
+    left: 0;
+    width: 100%;
+    height: 1000px;
+    z-index: -1;
 }
 
 .form-title {
@@ -42,7 +42,7 @@
 }
 
 .form-message p:nth-child(2) {
-  margin-left: 10px;
+  margin-left: 20px;
   font-weight: bold;
 }
 

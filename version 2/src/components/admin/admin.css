@@ -1,19 +1,59 @@
-.form-admin {
-  padding: 10% 15%;
+.admin-container-prof {
+  padding: 10vw;
 }
 
-.form-admin::before {
-  background-image: url("../../img/form-background.png");
-  background-repeat: no-repeat;
-  content: "";
-  position: absolute;
-  background-size: 100%;
-  filter: brightness(51%);
-  top: 161px;
-  left: 0;
-  width: 100%;
-  height: 1070px;
-  z-index: -1;
+.container-back {
+  background-image: url("../../img/adm-back.jpg");
+  height: 100%;
+}
+
+.adm-name {
+  letter-spacing: 3px;
+  margin: 5px 0;
+  font-size: 2vw;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.adm-surname {
+  letter-spacing: 3px;
+  margin: 5px 0;
+  font-size: 2vw;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.adm-nick {
+  letter-spacing: 1px;
+  margin: 5px 0;
+  font-family: sans-serif;
+}
+
+.user-info-admin {
+  border: 1px solid;
+  padding: 10px;
+  background-color: #fffffff5;
+  text-align: center;
+}
+
+.admin-container-myevents-add {
+  display: flex;
+  flex-direction: column;
+}
+
+.myEvents {
+ height: 200px;
+
+}
+
+.form-back {
+  border: 1px solid black;
+  padding: 5vw;
+  background: linear-gradient(to bottom right, #ff3e008a, #ffbe30db);
+}
+
+.form-admin {
+  padding: 6% 15%;
 }
 
 .form-admin-title {
@@ -24,8 +64,8 @@
 .form-admin-title > p {
   margin-bottom: 15px;
   letter-spacing: 5px;
-  color: #878787;
-  font-size: 18px;
+  color: black;
+  font-size: 3vw;
   font-family: sans-serif;
 }
 
@@ -42,15 +82,16 @@ select {
 
 .admin-container-inputs {
   display: grid;
-  grid-template-columns: 570px 570px;
-  grid-template-rows: auto;
   column-gap: 35px;
+  grid-row-gap: 30px;
   row-gap: 30px;
 }
 
 .formButtonAdmin {
+  width: 40%;
+  padding: 8px 20px;
   grid-column: 1 / span 2;
-  margin: 0px 409px;
+  float: right;
   height: 50px;
   border-radius: 50px;
   border: none;
@@ -59,4 +100,13 @@ select {
   font-weight: bold;
   font-size: 16px;
   background: linear-gradient(to bottom right, #ff3e00, #ffbe30) !important;
+}
+
+.yousMessage {
+  grid-column: 1 / span 2;
+  height: 150px;
+  border: 1px solid #f0f0f0;
+  width: 100%;
+  background-color: #f7f7f7;
+  padding: 3%;
 }
