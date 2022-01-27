@@ -38,7 +38,7 @@
     {
       "_id": "1",
       "id": 1,
-      "isActive": true,
+      "isActive": false,
       "picture": "img/mezzo.jpg",
       "title": "G-Flex Band at Mezzo",
       "field": "music",
@@ -80,7 +80,7 @@
     {
       "_id": "4",
       "id": "4",
-      "isActive": true,
+      "isActive": false,
       "picture": "img/threePigs.jpg",
       "title": "Three pigs",
       "field": "culture",
