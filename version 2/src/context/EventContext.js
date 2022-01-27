@@ -1,7 +1,5 @@
 import { createContext,useContext, useEffect, useState } from "react";
 
-
-
 const EventContext = createContext()
 //localStorage
 //  const getLocalStorage = () => {
@@ -15,7 +13,9 @@ const EventContext = createContext()
 const AppProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(true)
   const [events, setEvents] = useState([])
-
+  const [isAdded, setIsAdded] = useState(false)
+  const [isRemove, setIsRemoving] = useState(false)
+ 
   //get events
   const fetchData = async() => {
     setIsLoading(true)
@@ -44,19 +44,28 @@ const AppProvider = ({ children }) => {
     }, [])
  
     //add events
-
   const addEvents = (val) => {
-    console.log(val)
+    setIsAdded(true)
    fetch('http://localhost:8000/events', {
    method: 'POST',
    body: JSON.stringify(val),
    headers: {
     'Content-type': 'application/json; charset=UTF-8',
   },
-})
+}).then(() => setIsAdded(false))
   fetchData()
   }
-  
+  //remove event
+   let date = new Date();
+  const formatted = date.toString().slice(4, 10);
+  const handelRemove = () => {
+    setIsRemoving(true)
+    return events.filter(item => item.date === formatted)
+      .map(item => fetch(`http://localhost:8000/events/${item.id}`, {
+      method: 'DELETE',
+      }).then(() => setIsRemoving(false))
+        .then(() => fetchData()))
+  }
   //sort events
   const filterEvents = (val) => {
       setEvents(events.map(item => {
@@ -74,15 +83,35 @@ const AppProvider = ({ children }) => {
       }))
   }
   //isLikedHandler
-  const isLikedHandler = (id) => {
-    return setEvents(events.map(item => {
-      if (item._id === id) {
-      return {...item, isActive: !item.isActive};
-      } else {
-        return item
-     }
-   }))
+  // const isLikedHandler = (id) => {
+  //   return setEvents(events.map(item => {
+  //     if (item._id === id) {
+  //     return {...item, isActive: !item.isActive};
+  //     } else {
+  //       return item
+  //    }
+  //  }))
+  // }
+ 
+  const isLikedHandler =(id) =>{
+    return events.filter(item => item.id === id)
+    .map(item => fetch(`http://localhost:8000/events/${id}`, {
+        method: 'PUT',
+        body: JSON.stringify({
+        ...item,
+        isActive: !item.isActive
+      }),
+       headers: {
+       'Content-type': 'application/json; charset=UTF-8',
+    },
+   }).then((response) => response.json())
+      .then((data) => setEvents(...events, data)))
+    // .then(() => fetchData())
   }
+  //for updating after isLiked function
+  useEffect(() => {
+  isLikedHandler()
+  }, [events.isActive])
   
   return (
     <EventContext.Provider
@@ -92,7 +121,10 @@ const AppProvider = ({ children }) => {
         filterEvents,
         sortEvents,
         isLikedHandler,
-        addEvents
+        addEvents,
+        isAdded,
+        handelRemove,
+        isRemove
       }}
     >
       {children}

@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import './admin.css'
-import { Link } from 'react-router-dom'
 import { useGlobalContext } from '../../context/EventContext'
 
 const Admin = () => {
@@ -15,8 +14,9 @@ const Admin = () => {
     address: "",
   })
   
-  const { setEvents, events,addEvents } = useGlobalContext()
+  const { events,addEvents, isAdded, handelRemove, isRemove } = useGlobalContext()
  
+  
   const changeInputs = (e) => {
     const { value, name } = e.target
     setNewEvent ({
@@ -54,31 +54,37 @@ const Admin = () => {
         </div>
         <div className="admin-container-inputs">
           <input className="eventTitle" placeholder="Event title"
+            required
             value = {newEvent.title}
             name="title" 
             onChange = {changeInputs}
           />
           <input className="eventImage" placeholder="Image"
+            required
             value = {newEvent.picture}
             name="picture" 
             onChange = {changeInputs}
           />
-          <input className="eventDate" placeholder="Date: eg. 21 Feb"
+          <input className="eventDate" placeholder="Date: eg. Feb 21"
+            required
             value = {newEvent.date}
             name="date"
             onChange = {changeInputs}
           />
           <input className="eventDate" placeholder="Time: eg. 16:00 - 19:30"
-           value = {newEvent.registered}
+            required
+            value = {newEvent.registered}
             name="registered"
             onChange = {changeInputs}
           />
-            <input className="eventDate" placeholder="Price: eg. ֏4500"
+          <input className="eventDate" placeholder="Price: eg. ֏4500"
+            required
             value = {newEvent.ticket}
             name="ticket" 
             onChange = {changeInputs}
           />
-            <input className="eventDate" placeholder="Address"
+          <input className="eventDate" placeholder="Address"
+            required
             value = {newEvent.address}
             name="address" 
             onChange = {changeInputs}
@@ -97,12 +103,11 @@ const Admin = () => {
             name = "info"
              onChange = {changeInputs}
           ></textarea>
-           <button className="formButton" type="submit">ADD Event</button>
-          {/* <Link to="/events">
-            <button className="formButtonAdmin" type="submit">
-              ADD Event
-            </button>
-          </Link> */}
+          { !isAdded && <button className="formButton" type="submit">Add Event</button>}
+           { isAdded && <button className="formButton" type="submit" disabled >Adding new event...</button>}
+           <button className="formButton" type="button"
+           onClick={handelRemove}
+          >{ isRemove ? "Removing old Events..." : "Remove old Events" }</button>
         </div>
       </form>
     </div>

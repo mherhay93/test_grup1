@@ -5,6 +5,7 @@ import { useGlobalContext } from "../../context/EventContext";
 
 export default function Event({
   _id,
+  id,
   picture,
   title,
   address,
@@ -44,7 +45,7 @@ export default function Event({
         </Link>
         <div className="like-container">
           <FaRegHeart className= {isActive? 'heart' : '' }
-           onClick={() =>isLikedHandler(_id)}
+           onClick={() =>isLikedHandler(id)}
           />
         </div>
       </div>
