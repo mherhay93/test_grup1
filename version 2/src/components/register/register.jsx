@@ -14,11 +14,11 @@ const Register = () => {
   } = useForm({ mode: "onChange" });
 
   const [inRegister, setInRegister] = useState(false);
-
-  // const [radioAdmin, setRadioAdmin] = useState(false)
-  // const [radioUser, setRadioUser] = useState(false)
+  const [isAdmin, setIsAdmin] = useState(false);
+  const [error, setError] = useState(false)
 
   const submitDataRegister = (data) => {
+    data.admin = isAdmin;
     fetch("http://localhost:8000/users")
       .then((response) => {
         return response.json();
@@ -35,7 +35,6 @@ const Register = () => {
               data.password === item.password
             ) {
               counter++;
-              console.log(counter);
               setInRegister(false);
             }
           });
@@ -54,6 +53,8 @@ const Register = () => {
       });
   };
 
+  console.log(inRegister);
+
   return (
     <div className="register-container">
       <div className="register-box">
@@ -64,9 +65,32 @@ const Register = () => {
             <p>{t("LOGIN NOW")}</p>
           </div>
         </div>
+        <div className="radio-buttons">
+          <label>
+            <input
+              type="radio"
+              className="adiminBox"
+              name="admin"
+              value="admin"
+              onChange={() => setIsAdmin(true)}
+            />
+            {t("Admin")}
+          </label>
+          <label>
+            <input
+              type="radio"
+              className="userBox"
+              name="admin"
+              velue="user"
+              onChange={() => setIsAdmin(false)}
+            />
+            {t("User")}
+          </label>
+        </div>
         <form
           className="register-form"
-          onChange={handleSubmit(submitDataRegister)}
+          onClick={handleSubmit(submitDataRegister)}
+         
         >
           <input
             type="text"
@@ -120,51 +144,32 @@ const Register = () => {
           {errors?.password && (
             <span className="errorMessage">{errors?.password?.message}</span>
           )}
-          <div className="checkBoxInput">
-            <label>
-              <input
-                type="radio"
-                className="adiminBox"
-                name="admin"
-              />
-              {t("Admin")}
-            </label>
-            <label>
-              <input
-                type="radio"
-                className="userBox"
-                name="admin"
-              />
-              {t("User")}
-            </label>
-          </div>
+          <div className="checkBoxInput"></div>
           {inRegister ? (
-            <Link to="/login" className="register_login_button_link">
-              <button
-                className="register_login_button"
-                type="submit"
-                disabled={!isValid}
-              >
-                {t("LOGIN NOW")}
-              </button>
+            <Link
+              to="/login"
+              className="register_login_button"
+              type="submit"
+              disabled={!isValid}
+            >
+              {t("LOGIN NOW")}
             </Link>
           ) : (
             <button
               className="register_login_button"
               type="submit"
               disabled={!isValid}
+              onClick={()=>setError(true)}
             >
               {t("LOGIN NOW")}
             </button>
           )}
         </form>
-        {!inRegister ? (
-          ""
-        ) : (
+        {(!inRegister && error) ?
           <span className="errorMessage">
             A user with such data is already registered in the system
-          </span>
-        )}
+          </span> : ''
+        }
       </div>
     </div>
   );

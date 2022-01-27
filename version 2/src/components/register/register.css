@@ -77,16 +77,22 @@
   color: white;
 }
 
-.register_login_button_link {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
 .register_login_button {
+  padding: 15px 25px;
+  border-radius: 50px;
+  width: 160px;
+  height: 45px;
   color: #f97f1d;
+  background-color: white;
   font-size: 18px;
   font-weight: bold;
   font-family: sans-serif;
-  cursor: pointer;
+  
+}
+
+.radio-buttons {
+  display: flex;
+ align-items: center;
+ flex-direction: column;
+ color: wheat;
 }

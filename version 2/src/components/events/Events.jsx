@@ -18,7 +18,6 @@ const Events = () => {
     setnoOfElement(noOfElement - 9)
   }
  
-  console.log(noOfElement)
 
   if (isLoading) {
     return <Loading />;

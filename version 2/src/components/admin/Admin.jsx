@@ -8,8 +8,7 @@ import "./admin.css";
 const Admin = () => {
   const { t } = useTranslation();
 
-  const { a } = useServerData();
-  console.log(a);
+  const { dataInLogin } = useServerData();
 
   const [newEvent, setNewEvent] = useState({
     title: "",
@@ -57,9 +56,9 @@ const Admin = () => {
     <div className="admin-container">
       <div className="admin-container-prof">
         <div>
-          <p>Name</p>
-          <p>Surname</p>
-          <p>Nikname</p>
+          <p>{dataInLogin.userName}</p>
+          <p>{dataInLogin.userSurname}</p>
+          <p>{dataInLogin.userNik}</p>
         </div>
       </div>
       <div className="admin-container-myevents-add">

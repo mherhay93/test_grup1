@@ -7,6 +7,7 @@ import { FaGlobe } from "react-icons/fa";
 import { RiAdminFill } from "react-icons/ri";
 import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+import { useServerData } from "../../context/registerContext";
 
 
 let useClickOutside = (handler) => {
@@ -30,6 +31,8 @@ let useClickOutside = (handler) => {
 
 const Navbar = () => {
   
+  const {isLoginTrue} = useServerData();
+  const {dataInLogin} = useServerData()
   const { t } = useTranslation();
 
    const [ show, setShow ] = useState(false);
@@ -66,7 +69,7 @@ const Navbar = () => {
         </li>
       </div>
       <div className="nav-social" ref={domNode}>
-        <NavLink to="/admin">
+        <NavLink to={isLoginTrue ? dataInLogin?.admin ? '/admin' : '/user' : 'login'}>
           <RiAdminFill className="nav-logo" />
         </NavLink>
         <FaGlobe className="nav-logo" onClick={showHide} />
