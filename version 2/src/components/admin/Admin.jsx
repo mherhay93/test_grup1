@@ -5,6 +5,7 @@ import { useGlobalContext } from "../../context/EventContext";
 import { useServerData } from "../../context/registerContext";
 import "./admin.css";
 
+
 const Admin = () => {
   const { t } = useTranslation();
 
@@ -19,9 +20,9 @@ const Admin = () => {
     ticket: "",
     info: "",
     address: "",
-  });
-
-  const { setEvents, events, addEvents } = useGlobalContext();
+  })
+  
+  const { events,addEvents, isAdded, handelRemove, isRemove } = useGlobalContext()
 
   const changeInputs = (e) => {
     const { value, name } = e.target;
@@ -124,14 +125,11 @@ const Admin = () => {
               name="info"
               onChange={changeInputs}
             ></textarea>
-            <button className="formButton" type="submit">
-              ADD Event
+             { !isAdded && <button className="formButton" type="submit">Add Event</button>}
+           { isAdded && <button className="formButton" type="submit" disabled >Adding new event...</button>}
+            <button className="formButton" type="submit"  onClick={handelRemove}>
+            { isRemove ? "Removing old Events..." : "Remove old Events" }
             </button>
-            {/* <Link to="/events">
-            <button className="formButtonAdmin" type="submit">
-              {t("ADD Event")}
-            </button>
-          </Link> */}
           </div>
         </form>
       </div>
