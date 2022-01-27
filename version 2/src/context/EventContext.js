@@ -46,26 +46,26 @@ const AppProvider = ({ children }) => {
     //add events
   const addEvents = (val) => {
     setIsAdded(true)
-   fetch('http://localhost:8000/events', {
-   method: 'POST',
-   body: JSON.stringify(val),
-   headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-}).then(() => setIsAdded(false))
-  fetchData()
-  }
+    fetch('http://localhost:8000/events', {
+      method: 'POST',
+      body: JSON.stringify(val),
+      headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+    }).then(() => setIsAdded(false))
+     fetchData()
+    }
   //remove event
    let date = new Date();
-  const formatted = date.toString().slice(4, 10);
-  const handelRemove = () => {
+   const formatted = date.toString().slice(4, 10);
+   const handelRemove = () => {
     setIsRemoving(true)
     return events.filter(item => item.date === formatted)
       .map(item => fetch(`http://localhost:8000/events/${item.id}`, {
       method: 'DELETE',
       }).then(() => setIsRemoving(false))
         .then(() => fetchData()))
-  }
+    }
   //sort events
   const filterEvents = (val) => {
       setEvents(events.map(item => {
@@ -94,24 +94,22 @@ const AppProvider = ({ children }) => {
   // }
  
   const isLikedHandler =(id) =>{
-    return events.filter(item => item.id === id)
-    .map(item => fetch(`http://localhost:8000/events/${id}`, {
-        method: 'PUT',
-        body: JSON.stringify({
-        ...item,
-        isActive: !item.isActive
-      }),
-       headers: {
-       'Content-type': 'application/json; charset=UTF-8',
-    },
-   }).then((response) => response.json())
-      .then((data) => setEvents(...events, data)))
-    // .then(() => fetchData())
+    const currEvent=events.find(item => item.id === id)
+     fetch(`http://localhost:8000/events/${currEvent.id}`, {
+       method: 'PUT',
+      body: JSON.stringify({
+       ...currEvent,
+      isActive: !currEvent.isActive
+    }),
+    headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+})
+  .then((response) => response.json())
+     .then((data) => setEvents(data.id ))
+      fetchData()
   }
-  //for updating after isLiked function
-  useEffect(() => {
-  isLikedHandler()
-  }, [events.isActive])
+
   
   return (
     <EventContext.Provider
