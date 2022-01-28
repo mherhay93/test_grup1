@@ -28,11 +28,13 @@ const Login = () => {
       })
       .then((res) => {
         setDataUserServer(res);
+       
       });
   }, []);
 
+
   const submitDataLogin = (data) => {
-    let assistant;
+    let assistant;  console.log(dataUserServer);
     dataUserServer.map((item) => {
       if (data.userNik === item.userNik && data.password === item.password) {
         setDataInLogin(item);
@@ -61,7 +63,7 @@ const Login = () => {
           <input
             type="text"
             placeholder={t("User Nickname")}
-            {...register("userNic", {
+            {...register("userNik", {
               required: "This field is required",
               minLength: { value: 3, message: "enter at least 3 letters" },
             })}

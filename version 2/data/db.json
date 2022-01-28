@@ -18,6 +18,15 @@
       "password": "123",
       "admin": true,
       "id": "lyLxHkc"
+    },
+    {
+      "userName": "aaaaaaaaaaaaa",
+      "userSurname": "aaaaaaaaaaaaaaaaaaa",
+      "userNik": "aaaaaaaaaaaaaaaaaaa",
+      "email": "aaaaaaaaaaaaaaaaaaaaa@gmail.com",
+      "password": "5555",
+      "admin": false,
+      "id": "PBuWcHd"
     }
   ],
   "events": [
@@ -38,7 +47,7 @@
     {
       "_id": "3",
       "id": 3,
-      "isActive": true,
+      "isActive": false,
       "picture": "img/waterfall.jpg",
       "title": "Ice waterfall",
       "field": "tourism",
