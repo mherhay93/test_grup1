@@ -58,9 +58,9 @@ const Admin = () => {
       <div className="container-back">
         <div className="admin-container-prof">
           <div className="user-info-admin">
-            <p>{dataInLogin.userName}</p>
-            <p>{dataInLogin.userSurname}</p>
-            <p>{dataInLogin.userNik}</p>
+            <p className="adm-name">{dataInLogin.userName}</p>
+            <p className="adm-surname">{dataInLogin.userSurname}</p>
+            <p className="adm-nick">{dataInLogin.userNik}</p>
           </div>
         </div>
       </div>
@@ -101,14 +101,14 @@ const Admin = () => {
               />
               <input
                 className="eventDate"
-                placeholder="Price: eg. ֏4500"
+                placeholder={t("Price: eg. ֏4500")}
                 value={newEvent.ticket}
                 name="ticket"
                 onChange={changeInputs}
               />
               <input
                 className="eventDate"
-                placeholder="Address"
+                placeholder={t("Address")}
                 value={newEvent.address}
                 name="address"
                 onChange={changeInputs}
@@ -126,14 +126,14 @@ const Admin = () => {
               </select>
               <textarea
                 className="yousMessage"
-                placeholder="Description"
+                placeholder={t("Description")}
                 value={newEvent.info}
                 name="info"
                 onChange={changeInputs}
               ></textarea>
               {!isAdded && (
                 <button className="formButton" type="submit">
-                  Add Event
+                 {t("ADD Event")}
                 </button>
               )}
               {isAdded && (

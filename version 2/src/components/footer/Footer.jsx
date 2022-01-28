@@ -5,8 +5,13 @@ import {AiFillPhone} from "react-icons/ai";
 import {BsFillEnvelopeFill} from "react-icons/bs";
 import {IoLocationSharp} from "react-icons/io5"
 import {NavLink} from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+
 
 const Footer = () => {
+
+  const { t } = useTranslation();
+
     return (
         <footer className="footer-container">
             <div className="footer-social-links">
@@ -21,16 +26,16 @@ const Footer = () => {
             </div>
             <div className="links-to-nav">
                 <li className="lists-footer">
-                    <NavLink to='/'>Home</NavLink>
+                    <NavLink to='/'>{t("Home")}</NavLink>
                 </li>
                 <li className="lists-footer">
-                    <NavLink to='/about'>About</NavLink>
+                    <NavLink to='/about'>{t("About")}</NavLink>
                 </li>
                 <li className="lists-footer">
-                    <NavLink to='/events'>Events</NavLink>
+                    <NavLink to='/events'>{t("Events")}</NavLink>
                 </li>
                 <li className="lists-footer">
-                    <NavLink to='/contacts'>Contacts</NavLink>
+                    <NavLink to='/contacts'>{t("Contacts")}</NavLink>
                 </li>
             </div>
             <div className="contact">
@@ -38,7 +43,7 @@ const Footer = () => {
                     <div className="contact-icon-back-footer">
                         <IoLocationSharp className="location-icon-footer contact-icon"/>
                     </div>
-                    <span className="contact-info-footer infos">Armenia,Erevan</span>
+                    <span className="contact-info-footer infos">{t("Armenia,Erevan")}</span>
                 </a>
                 <a href="#" className="contact-footer-icon">
                     <div className="contact-icon-back-footer">

@@ -24,6 +24,7 @@
 } */
 
 .hero-info h2 {
+  text-align: center;
   color: var(--darkOrange);
    font-size: 2vw;
   padding: 10px 0 40px;

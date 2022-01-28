@@ -18,15 +18,6 @@
       "password": "123",
       "admin": true,
       "id": "lyLxHkc"
-    },
-    {
-      "userName": "aaaaaaaaaaaaa",
-      "userSurname": "aaaaaaaaaaaaaaaaaaa",
-      "userNik": "aaaaaaaaaaaaaaaaaaa",
-      "email": "aaaaaaaaaaaaaaaaaaaaa@gmail.com",
-      "password": "5555",
-      "admin": false,
-      "id": "PBuWcHd"
     }
   ],
   "events": [
