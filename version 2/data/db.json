@@ -47,7 +47,7 @@
     {
       "_id": "3",
       "id": 3,
-      "isActive": false,
+      "isActive": true,
       "picture": "img/waterfall.jpg",
       "title": "Ice waterfall",
       "field": "tourism",
@@ -89,7 +89,7 @@
     {
       "_id": "6",
       "id": "6",
-      "isActive": false,
+      "isActive": true,
       "picture": "img/ornifl.jpg",
       "title": "Ornifl",
       "field": "culture",
