@@ -40,7 +40,7 @@
 }
 
 .languages{
-  width: 160px;
+  width: 130px;
     height: 112px;
     background: var(--darkOrange);
     position: absolute;
@@ -49,12 +49,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: 10;
     -webkit-touch-callout: none;
   -webkit-user-select: none;
    -khtml-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+
 }
 
 .languages li{
