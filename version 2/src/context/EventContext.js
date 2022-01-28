@@ -94,7 +94,7 @@ const AppProvider = ({ children }) => {
   // }
  
   const isLikedHandler =(id) =>{
-    const currEvent=events.find(item => item.id === id)
+    const currEvent = events.find(item => item.id === id)
      fetch(`http://localhost:8000/events/${currEvent.id}`, {
        method: 'PUT',
       body: JSON.stringify({
