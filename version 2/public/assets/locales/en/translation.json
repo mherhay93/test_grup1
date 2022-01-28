@@ -60,41 +60,18 @@
     "Admin":" Admin",
     "User":" User",
     "Add new event":"Add new event",
+    "Name":"Name",
+    "Surname":"Surname",
+    "Nickname":"Nickname",
     "Event title":"Event title",
     "Image":"Image",
     "Date: eg. 21 Feb":"Date: eg. 21 Feb",
     "Time: eg. 16:00 - 19:30":"Time: eg. 16:00 - 19:30",
+    "Price: eg. ֏4500":"Price: eg. ֏4500",
+    "Description":"Description",
     "ADD Event":"ADD Event",
-    "awards": [
-      {
-        "winAward":"1st Place For Unique Events 2018",
-        "winDate": "AUG 2015",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      },
-      {
-        "winAward":"1st Winner Best New Years Events",
-        "winDate": "MAY 2014",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      },
-      {
-        "winAward":"1st Place International Events Awards",
-        "winDate": "DEC 2013",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      },
-      {
-        "winAward":"1st Place For Unique Events 2018",
-        "winDate": "SEP 2018",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      },
-      {
-        "winAward":"1st Winner Best New Years Events",
-        "winDate": "JULY 2016",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      },
-      {
-        "winAward":"1st Place International Events Awards",
-        "winDate": "JAN 2017",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      }
-    ]
+    "Show More":"Show More",
+    "Show Less":"Show Less",
+    "Armenia,Erevan":"Armenia,Erevan"
+
   } 

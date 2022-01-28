@@ -60,41 +60,20 @@
     "Admin":" Администратор",
     "User":" Пользователь",
     "Add new event":"Добавить новое событие",
+    "Name":"Имя",
+    "Surname":"Фамилия",
+    "Nikname":"Имя пользователя",
     "Event title":"Название события",
     "Image":"Изображение",
     "Date: eg. 21 Feb":"Дата: напр. 21 фев",
     "Time: eg. 16:00 - 19:30":"Время: напр. 16:00 - 19:30",
+    "Price: eg. ֏4500":"Цена: напр. ֏4500",
+    "Description":"Описание",
     "ADD Event":"ДОБАВИТЬ событие",
-    "awards": [
-      {
-        "winAward":"ry1st Place For Unique Events 2018",
-        "winDate": "AUG 2015",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      },
-      {
-        "winAward":"1st Winner Best New Years Events",
-        "winDate": "MAY 2014",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      },
-      {
-        "winAward":"1st Place International Events Awards",
-        "winDate": "DEC 2013",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      },
-      {
-        "winAward":"1st Place For Unique Events 2018",
-        "winDate": "SEP 2018",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      },
-      {
-        "winAward":"1st Winner Best New Years Events",
-        "winDate": "JULY 2016",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      },
-      {
-        "winAward":"1st Place International Events Awards",
-        "winDate": "JAN 2017",
-        "title": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit diam sed diam nonummy nibh euismod tincidunt."
-      }
-    ]
+    "Show More":"Показать больше",
+    "Show Less":"Показать меньше",
+    "Armenia,Erevan":"Армения, Ереван"
+
+
+
   }

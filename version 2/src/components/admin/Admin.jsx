@@ -57,9 +57,9 @@ const Admin = () => {
     <div className="admin-container">
       <div className="admin-container-prof">
         <div>
-          <p>Name</p>
-          <p>Surname</p>
-          <p>Nikname</p>
+          <p>{t("Name")}</p>
+          <p>{t("Surname")}</p>
+          <p>{t("Nikname")}</p>
         </div>
       </div>
       <div className="admin-container-myevents-add">
@@ -99,14 +99,14 @@ const Admin = () => {
             />
             <input
               className="eventDate"
-              placeholder="Price: eg. ֏4500"
+              placeholder={t("Price: eg. ֏4500")}
               value={newEvent.ticket}
               name="ticket"
               onChange={changeInputs}
             />
             <input
               className="eventDate"
-              placeholder="Address"
+              placeholder={t("Address")}
               value={newEvent.address}
               name="address"
               onChange={changeInputs}
@@ -120,13 +120,13 @@ const Admin = () => {
             </select>
             <textarea
               className="yousMessage"
-              placeholder="Description"
+              placeholder={t("Description")}
               value={newEvent.info}
               name="info"
               onChange={changeInputs}
             ></textarea>
             <button className="formButton" type="submit">
-              ADD Event
+              {t("ADD Event")}
             </button>
             {/* <Link to="/events">
             <button className="formButtonAdmin" type="submit">
