@@ -39,6 +39,7 @@ const Login = () => {
         setIsLogin(true);
         assistant = item;
         setLocalLogin(item)
+        console.log(1);
       }
     });
     if (
@@ -46,6 +47,7 @@ const Login = () => {
       assistant?.password?.length !== data?.password?.length
     ) {
       setIsLogin(false);
+      console.log(2);
     }
   };
   
@@ -58,8 +60,8 @@ const Login = () => {
         <div className="login-form">
           <input
             type="text"
-            placeholder={t("User_Nik")}
-            {...register("userNik", {
+            placeholder={t("User Nickname")}
+            {...register("userNic", {
               required: "This field is required",
               minLength: { value: 3, message: "enter at least 3 letters" },
             })}

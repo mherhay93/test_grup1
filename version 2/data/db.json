@@ -17,34 +17,7 @@
       "email": "mherhay93@gmail.com",
       "password": "123",
       "admin": true,
-      "id": "qvSOUtF"
-    },
-    {
-      "userName": "aaa",
-      "userSurname": "a",
-      "userNik": "aaaaaaaaaaaaaaaaaaa",
-      "email": "sadasd",
-      "password": "aaaa",
-      "admin": false,
-      "id": "EGqwJB7"
-    },
-    {
-      "userName": "sadsad",
-      "userSurname": "asd",
-      "userNik": "asas",
-      "email": "aaaaaaaaaaaaaaaaaaaaa@gmail.com",
-      "password": "aaaaaaaaaaaa",
-      "admin": false,
-      "id": "cYaTCVi"
-    },
-    {
-      "userName": "vvv",
-      "userSurname": "vvv",
-      "userNik": "vvv",
-      "email": "vvv@gmail.com",
-      "password": "vvv",
-      "admin": true,
-      "id": "Oy3g1hw"
+      "id": "lyLxHkc"
     }
   ],
   "events": [
@@ -229,30 +202,6 @@
       "_id": "14",
       "id": "Slbn-LB",
       "isHidden": false
-    },
-    {
-      "title": "",
-      "picture": "",
-      "date": "",
-      "registered": "",
-      "field": "",
-      "ticket": "",
-      "info": "",
-      "address": "",
-      "id": "HDLm97a",
-      "isHidden": false,
-      "isActive": true
-    },
-    {
-      "title": "",
-      "picture": "",
-      "date": "",
-      "registered": "",
-      "field": "",
-      "ticket": "",
-      "info": "",
-      "address": "",
-      "id": "ni7ZKLi"
     }
   ]
 }

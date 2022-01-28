@@ -5,16 +5,10 @@
 }
 
 .login-box {
-  background: linear-gradient(
-    90deg,
-    rgba(253, 93, 14, 255) 0%,
-    rgba(244, 170, 47, 255) 100%
-  );
-  width: 800px;
-  height: 400px;
-  left: 580px;
-  bottom: 150px;
-  z-index: 2;
+  background: linear-gradient(90deg, rgb(253 36 14 / 62%) 0%, rgb(244 156 47 / 62%) 100% );
+  width: 45%;
+  padding: 5% 0;
+  border-radius: 15%;
 }
 
 .login-title {
@@ -22,7 +16,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
 }
 
 .login-title > p {
@@ -37,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .login-form > input {
