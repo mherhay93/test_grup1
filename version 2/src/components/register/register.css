@@ -5,13 +5,10 @@
 }
 
 .register-box {
-  background: linear-gradient(
-    90deg,
-    rgba(253, 93, 14, 255) 0%,
-    rgba(244, 170, 47, 255) 100%
-  );
-  width: 800px;
-  height: 650px;
+  background: linear-gradient(90deg, rgb(253 93 14 / 62%) 0%, rgb(244 170 47 / 62%) 100% );
+  width: 60%;
+  padding: 5% 0;
+  border-radius: 10%;
 }
 
 .register-title {
