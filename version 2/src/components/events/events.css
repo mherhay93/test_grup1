@@ -4,7 +4,7 @@
   padding: 3% 5%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   font-size: 1.4vw;
 }
@@ -19,13 +19,13 @@
 
 .img-container {
   width: 100%;
-  /* height: 250px; */
+  height: 250px;
   position: relative;
 }
 
 .img-container img {
   width: 100%;
-  /* height: 100%; */
+  height: 100%;
   display: block;
 }
 
@@ -40,8 +40,28 @@
 }
 
 .date-info p {
+  font-size: 1vw;
   text-align: center;
   padding: 3px;
+}
+.input-container {
+  bottom: 5%;
+  width: 25%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -30px;
+}
+.hero-info h2 {
+  color: var(--darkOrange);
+  font-size: 2vw;
+  padding: 10px 0 10px;
+}
+.search-container {
+text-align:center;
+}
+hero-info{
+text-align:center
 }
 
 .info-container {
@@ -135,6 +155,13 @@ button:active {
 .heart{
  color: rgb(228, 72, 72);
 }
+
+.more_less_buttons{
+  width: 100%;
+  text-align: center;
+}
+
+
 
 @media screen and (max-width: 992px) {
  .event-box {

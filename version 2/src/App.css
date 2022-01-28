@@ -42,11 +42,6 @@ li {
 a {
   text-decoration: none;
 }
-
-.container {
-  width: 100vw;
-}
-
 /* loading */
 
 .loader,

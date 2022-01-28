@@ -13,6 +13,8 @@ const Register = () => {
     formState: { errors, isValid },
   } = useForm({ mode: "onChange" });
 
+
+  console.log(isValid);
   const [inRegister, setInRegister] = useState(false);
   const [isAdmin, setIsAdmin] = useState(false);
   const [error, setError] = useState(false)
@@ -53,8 +55,6 @@ const Register = () => {
       });
   };
 
-  console.log(inRegister);
-
   return (
     <div className="register-container">
       <div className="register-box">
@@ -89,8 +89,7 @@ const Register = () => {
         </div>
         <form
           className="register-form"
-          onClick={handleSubmit(submitDataRegister)}
-         
+          onSubmit={handleSubmit(submitDataRegister)}
         >
           <input
             type="text"

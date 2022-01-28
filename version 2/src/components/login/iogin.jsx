@@ -28,17 +28,20 @@ const Login = () => {
       })
       .then((res) => {
         setDataUserServer(res);
+       
       });
   }, []);
 
+
   const submitDataLogin = (data) => {
-    let assistant;
+    let assistant;  console.log(dataUserServer);
     dataUserServer.map((item) => {
       if (data.userNik === item.userNik && data.password === item.password) {
         setDataInLogin(item);
         setIsLogin(true);
         assistant = item;
         setLocalLogin(item)
+        console.log(1);
       }
     });
     if (
@@ -46,6 +49,7 @@ const Login = () => {
       assistant?.password?.length !== data?.password?.length
     ) {
       setIsLogin(false);
+      console.log(2);
     }
   };
   
@@ -58,7 +62,7 @@ const Login = () => {
         <div className="login-form">
           <input
             type="text"
-            placeholder={t("User_Nik")}
+            placeholder={t("User Nickname")}
             {...register("userNik", {
               required: "This field is required",
               minLength: { value: 3, message: "enter at least 3 letters" },

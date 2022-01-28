@@ -39,7 +39,7 @@ const UpperNav = () => {
       ) : (
         <>
           <Link
-            style={{ marginLeft: "70%", color: "white" }}
+            style={{ marginLeft: "67%", color: "white" }}
             to={dataInLogin?.admin ? "/admin" : "/user"}
           >
             <span className="nav-register">{dataInLogin.userNik}</span>

@@ -44,7 +44,7 @@ export default function Event({
           <button className="info-btn">Details</button>
         </Link>
         <div className="like-container">
-          <FaRegHeart className= {isActive? 'heart' : '' }
+          <FaRegHeart className= {isActive ? 'heart' : '' }
            onClick={() =>isLikedHandler(id)}
           />
         </div>

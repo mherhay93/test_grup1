@@ -1,3 +1,49 @@
 .user-container {
-    display: flex;
-  }
+  padding: 2vw;
+  background-image: url("../../img/6.image.jpg");
+  filter: brightness(100%);
+}
+
+.user-header {
+  border: 1px solid #00000061;
+  padding: 3% 2%;
+  background-color: #2e2e2ee3;
+  color: white;
+  font-family: cursive;
+  font-size: 2vw;
+  letter-spacing: 3px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.user-container-prof {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+}
+
+.user-info {
+  padding: 10px 0;
+}
+
+.user-name {
+  letter-spacing: 2px;
+  margin: 5px 0;
+  font-size: 2vw;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.user-surname {
+  letter-spacing: 2px;
+  margin: 5px 0;
+  font-size: 2vw;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.user-nickname {
+  letter-spacing: 1px;
+  margin: 5px 0;
+  font-family: sans-serif;
+}
