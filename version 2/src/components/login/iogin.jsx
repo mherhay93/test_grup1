@@ -46,8 +46,8 @@ console.log(isLogin);
         <div className="login-form">
           <input
             type="text"
-            placeholder={t("User_Nik")}
-            {...register("userNik", {
+            placeholder={t("User Nickname")}
+            {...register("userNic", {
               required: "This field is required",
               minLength: { value: 3, message: "enter at least 3 letters" },
             })}
