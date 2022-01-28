@@ -18,13 +18,22 @@
       "password": "123",
       "admin": true,
       "id": "lyLxHkc"
+    },
+    {
+      "userName": "qqqqqqqqq",
+      "userSurname": "qqqqqqqq",
+      "userNik": "qqqqqqqqq",
+      "email": "qqqqqqqqqqq@agsds",
+      "password": "7777777",
+      "admin": false,
+      "id": "GdJF_5Z"
     }
   ],
   "events": [
     {
       "_id": "0",
       "id": 0,
-      "isActive": true,
+      "isActive": false,
       "picture": "img/nutcracker.jpg",
       "title": "P.Tchaikovsky The Nutcracker",
       "field": "culture",
@@ -52,7 +61,7 @@
     {
       "_id": "2",
       "id": 2,
-      "isActive": true,
+      "isActive": false,
       "picture": "img/digital.jpg",
       "title": "Digital Demo Day",
       "field": "education",
@@ -66,7 +75,7 @@
     {
       "_id": "3",
       "id": 3,
-      "isActive": true,
+      "isActive": false,
       "picture": "img/waterfall.jpg",
       "title": "Ice waterfall",
       "field": "tourism",
@@ -80,7 +89,7 @@
     {
       "_id": "4",
       "id": "4",
-      "isActive": true,
+      "isActive": false,
       "picture": "img/threePigs.jpg",
       "title": "Three pigs",
       "field": "culture",
@@ -94,7 +103,7 @@
     {
       "_id": "5",
       "id": "5",
-      "isActive": true,
+      "isActive": false,
       "picture": "img/carmen.jpg",
       "title": "G.BIZET CARMEN opera",
       "field": "culture",
@@ -108,7 +117,7 @@
     {
       "_id": "6",
       "id": "6",
-      "isActive": true,
+      "isActive": false,
       "picture": "img/ornifl.jpg",
       "title": "Ornifl",
       "field": "culture",

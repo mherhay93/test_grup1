@@ -82,33 +82,33 @@ const AppProvider = ({ children }) => {
     }))
   }
 
-  //isLikedHandler
-  // const isLikedHandler = (id) => {
-  //   return setEvents(events.map(item => {
-  //     if (item._id === id) {
-  //     return {...item, isActive: !item.isActive};
-  //     } else {
-  //       return item
-  //    }
-  //  }))
-  // }
- 
-  const isLikedHandler =(id) =>{
-    const currEvent = events.find(item => item.id === id)
-     fetch(`http://localhost:8000/events/${currEvent.id}`, {
-       method: 'PUT',
-      body: JSON.stringify({
-       ...currEvent,
-      isActive: !currEvent.isActive
-    }),
-    headers: {
-    'Content-type': 'application/json; charset=UTF-8',
-  },
-})
-  .then((response) => response.json())
-     .then((data) => setEvents(data.id ))
-      fetchData()
+  // isLikedHandler
+  const isLikedHandler = (id) => {
+    return setEvents(events.map(item => {
+      if (item.id === id) {
+      return {...item, isActive: !item.isActive};
+      } else {
+        return item
+     }
+   }))
   }
+ 
+//   const isLikedHandler =(id) =>{
+//     const currEvent = events.find(item => item.id === id)
+//      fetch(`http://localhost:8000/events/${currEvent.id}`, {
+//        method: 'PUT',
+//       body: JSON.stringify({
+//        ...currEvent,
+//       isActive: !currEvent.isActive
+//     }),
+//     headers: {
+//     'Content-type': 'application/json; charset=UTF-8',
+//   },
+// })
+//   .then((response) => response.json())
+//      .then((data) => setEvents(data.id ))
+//       fetchData()
+//   }
 
   
   return (

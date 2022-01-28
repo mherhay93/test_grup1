@@ -60,7 +60,7 @@ const Admin = () => {
           <div className="user-info-admin">
             <p className="adm-name">{dataInLogin.userName}</p>
             <p className="adm-surname">{dataInLogin.userSurname}</p>
-            <p className="adm-nick">{dataInLogin.userNik}</p>
+            <p className="adm-nick">({dataInLogin.userNik})</p>
           </div>
         </div>
       </div>

@@ -44,6 +44,25 @@
   text-align: center;
   padding: 3px;
 }
+.input-container {
+  bottom: 5%;
+  width: 25%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -30px;
+}
+.hero-info h2 {
+  color: var(--darkOrange);
+  font-size: 2vw;
+  padding: 10px 0 10px;
+}
+.search-container {
+text-align:center;
+}
+hero-info{
+text-align:center
+}
 
 .info-container {
   padding: 2% 4%;
@@ -141,6 +160,7 @@ button:active {
   width: 100%;
   text-align: center;
 }
+
 
 
 @media screen and (max-width: 992px) {
