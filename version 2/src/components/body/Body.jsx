@@ -9,7 +9,7 @@ const Body = () => {
 
   const [currentImg, setCurrentImg] = useState(0)
   const { events } = useGlobalContext()
-  
+
    const nextSlideHandler =()=>{
    setCurrentImg(currentImg === events.length -1  ? 0 : currentImg + 1)
  }
@@ -43,16 +43,17 @@ const Body = () => {
         >
           <AiFillRightCircle />
          </div>
-        </div>
-         <ul className="input-container">
+            <ul className="input-container">
             {events.map((item,index)=>(
-              <li key={item._id}>
-                <input type="radio" name="slide" value={currentImg} onClick={() =>{
-                 setCurrentImg(index)
-                 }} checked={currentImg === index} /> 
-              </li>  
-               ))}
-           </ul>
+                <li key={item._id}>
+                    <input type="radio" name="slide" value={currentImg} onClick={() =>{
+                        setCurrentImg(index)
+                    }} checked={currentImg === index} />
+                </li>
+            ))}
+        </ul>
+        </div>
+
          </section>
   )
 }

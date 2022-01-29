@@ -9,7 +9,7 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
   flex-direction: column;
   color: var(--white);
   background-color: rgba(20, 20, 20, 0.6);
@@ -66,9 +66,9 @@
   color: var(--darkOrange);
 }
 .input-container {
-  position: absolute;
-  bottom: 5%;
-  left: 42%;
+  display: block;
+  width: 27%;
+  margin: 15px auto 0 auto;
 }
 
 .input-container li {
