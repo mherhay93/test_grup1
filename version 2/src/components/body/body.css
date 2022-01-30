@@ -27,7 +27,7 @@
   text-align: center;
   color: var(--darkOrange);
    font-size: 2vw;
-  padding: 10px 0 40px;
+  padding: 10px 0 10px;
 }
 
 .hero-links {
@@ -67,9 +67,12 @@
   color: var(--darkOrange);
 }
 .input-container {
-  position: absolute;
   bottom: 5%;
-  left: 42%;
+  width: 25%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -30px;
 }
 
 .input-container li {
